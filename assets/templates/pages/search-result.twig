@@ -1,0 +1,39 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Результат поиска" %}
+{% set bread = ['Главная', 'Результат поиска'] %}
+
+{% block content %}
+
+	<div class="gray-wrapper">
+		<div class="uk-container">
+			<h1>Результат поиска</h1>
+			<div class="search-result__message">По запросу 1С Предприятие найдено
+				<a href="">6 результатов</a>
+			</div>
+			<form action="" class="default-form main-search-form">
+				<input type="text" placeholder="Введите поисковый запрос">
+				<button class="btn">Найти</button>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- begin search-result-section -->
+	<div class="search-result-section">
+		<div class="uk-container">
+			<div class="search-result__list uk-margin-large-bottom">
+				{% for item in 0..3 %}
+					<div class="search-result__item">
+						<a href="" class="search-result__item-title">Раздельный учет в 1С для предприятий выполняющих оборонзаказ</a>
+						<div class="search-result__item-text">.. дополнительными настройками. Консультация пользователей по работе с расширением «Отчет 543-ФЗ» в объёме до 3-х часов. Телефонная линия консультации в течение первого месяца использования расширения «Отчет 543-ФЗ». от 98 000 руб. «Отчет 543-ФЗ» для конфигурации 1С Управление производственным предприятием ред.1.3 Подходит для крупных производственных , со сложным учетом и большим объёмом заказов Составление и согласование технического задания с уточненными требованиями к Отчету-543 ФЗ. Передача дистрибутива и установка на рабочую базу расширения ...</div>
+					</div>
+				{% endfor %}
+			</div>
+			<a href="" class="btn btn--full-width uk-margin-large-bottom" role="button">Показать еще</a>
+			{% include "../includes/components/pagination.twig" %}
+		</div>
+	</div>
+	<!-- end search-result-section -->
+
+
+{% endblock %}

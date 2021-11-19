@@ -1,0 +1,19 @@
+{% import "../mixins/svg.twig" as mixins %}
+<!DOCTYPE html>
+<html lang="ru">
+	{% include "../includes/head.twig" %}
+	<body>
+		<div class="page-wrapper">
+			{% include "../includes/header.twig" %}
+			{% include "../includes/components/breadcrumbs.twig" %}
+			<main class="main">
+				<section class="content"> {% block content %}{% endblock %}
+					</section>
+					{% block afterContentBlock %}{% endblock %}
+				</main>
+				{% include "../includes/footer.twig" %}
+			</div>
+			{% include "../includes/modals.twig" %}
+			{% include "../includes/scripts.twig" %}
+		</body>
+	</html>

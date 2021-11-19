@@ -1,0 +1,32 @@
+.directory-list {
+  @include list-reset();
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+  li {
+    position: relative;
+    margin-bottom: 24px !important;
+    display: flex;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    &:before {
+      content: "";
+      width: 48px;
+      height: 48px;
+      margin-right: 20px;
+      background: url("../img/icon-svg/doc.svg") center no-repeat;
+      background-size: contain;
+      flex-shrink: 0;
+    }
+  }
+
+  a {
+    padding-top: 12px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,16 @@
+<!-- begin content-group -->
+<section class="content-group{{modifyClass}}">
+	<div class="uk-container">
+		<div class="content-group__inner">
+			<div class="content-group__header">
+				<h2 {{id}} class="title-h2">{{title}}</h2>
+				{% if subtitle %}
+					<a href="" class="content-group__subtitle">{{subtitle}}</a>
+				{% endif %}
+			</div>
+			<div class="content-group__body"> {% block content %}{% endblock %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->

@@ -1,0 +1,105 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Внедренные решения" %}
+{% set bread = ['Главная', 'Внедренные решения'] %}
+
+{% block content %}
+
+	<div class="gray-wrapper">
+		<div class="uk-container">
+			<h1>Внедренные решения</h1>
+			<div class="lead-text">
+				Компания 1С:Франчайзи Виктория предоставляет
+				<span class="fill-yellow">услуги по автоматизации</span>
+				учета на основе программ<span class="fill-yellow">
+					"1С:Предприятие".</span>
+				В данном разделе вы можете посмотреть некоторые из наших внедрённых решений за последние несколько лет.
+			</div>
+		</div>
+	</div>
+
+	<div class="uk-container">
+		<ul class="promo-card-list uk-child-width-1-2@m uk-margin-large-bottom" uk-grid>
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Отчет по заказам для 1С:Комплексная автоматизация 8</a>
+					</div>
+					<div class="promo-card__subtitle">ООО «Московская Тепловая Компания»</div>
+					<div class="promo-card__desc">
+						<p>Внешний отчет «Отчет по заказам» для 1С:Комплексная автоматизация 8. Отчет выводит информацию по незакрытым (не оплачен/не отгружен полностью) заказам в разрезе контрагентов за период.</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Разработка правил обмена между конфигурациями 1C</a>
+					</div>
+					<div class="promo-card__subtitle">ОАО «Сельэлектросетьстрой»</div>
+					<div class="promo-card__desc">
+						<ol>
+							<li>Разработка правил обмена между конфигурациями 1C: Управление торговлей 11 и 1С: Бухгалтерия предприятия 2.0.</li>
+							<li>Разработка внешнего отчета «Платежный календарь».</li>
+							<li>Доработка типового отчета «Анализ потребностей товара»</li>
+						</ol>
+					</div>
+				</div>
+			</li>
+
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Добавить в справочник «Договора контрагентов» реквизит «Сумма договора»</a>
+					</div>
+					<div class="promo-card__subtitle">ОАО «Сельэлектросетьстрой»</div>
+					<div class="promo-card__desc">
+						<p>Добавить реквизит «Сумма договора» в справочник «Договора контрагентов». Добавить условие если сумма по документу превышает сумму, указанную в договоре контрагента, в реквизите «Сумма договора», документ не будет проведен.</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Отчет по менеджерам для ООО «Московская Тепловая Компания»</a>
+					</div>
+					<div class="promo-card__subtitle">ООО «Московская Тепловая Компания»</div>
+					<div class="promo-card__desc">
+						<p>Создать внешний отчет «Отчет по менеджерам». Добавить блокировку в документе «Реализация товаров услуг» на резервирование товара.</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Внедрение "1С:Бухгалтерия 8 ПРОФ" в ООО "ЭКСПОПРОЕКТ"</a>
+					</div>
+					<div class="promo-card__subtitle">ООО «Московская Тепловая Компания»</div>
+					<div class="promo-card__desc">
+						<p>Добавить реквизит «Сумма договора» в справочник «Договора контрагентов». Добавить условие если сумма по документу превышает сумму, указанную в договоре контрагента, в реквизите «Сумма договора», документ не будет проведен.</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="item-wrapper">
+				<div class="promo-card">
+					<div class="promo-card__title">
+						<a href="">Внедрение "1С:Зарплата и управление персоналом 8" в ООО "Кинокомпания ФИБР-фильм" для автоматизации кадрового учета и расчетов с персоналом</a>
+					</div>
+					<div class="promo-card__subtitle">ОАО «Сельэлектросетьстрой»</div>
+					<div class="promo-card__desc">
+						<p>
+							Автоматизированы следующие функции:</p>
+
+						<p>Управление персоналом и кадровый учет (HRM)</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<a href="" class="btn btn--full-width uk-margin-large-bottom">Показать еще</a>
+		{% include "../includes/components/pagination.twig" %}
+	</div>
+
+{% endblock %}

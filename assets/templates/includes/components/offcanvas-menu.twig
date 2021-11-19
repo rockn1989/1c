@@ -1,0 +1,97 @@
+<!-- begin offcanvas-menu -->
+<div id="offcanvas-menu" class="offcanvas-menu" uk-offcanvas>
+	<div class="uk-offcanvas-bar">
+		<div class="uk-panel">
+			<div class="uk-panel__top">
+				<div class="geo-list parent">
+					<div class="geo-list__inner js__toggle-subnav-wrapper">
+						<div class="geo-list__city">Москва</div>
+						<div class="geo-list__phone">
+							<a href="tel:+74957862146">+7(495)789-21-46
+							</a>
+						</div>
+					</div>
+					<div class="subnav-wrapper">
+						<div class="city-item">
+							<div class="city-item__name">Москва</div>
+							<a href="tel:+74957862146" class="city-item__phone">+7 (495) 786 21 46</a>
+						</div>
+						<div class="city-item">
+							<div class="city-item__name">Санкт-Петербург</div>
+							<a href="tel:+78126444419" class="city-item__phone">+7 (812) 644 44 19</a>
+						</div>
+						<div class="city-item">
+							<div class="city-item__name">Самара</div>
+							<a href="tel:+78462334318" class="city-item__phone">+7 (846) 233 43 18</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="uk-panel__bottom">
+				<ul class="uk-nav">
+					{% for index, link in mainNav %}
+						{% if index == 1 %}
+							<li class="uk-nav__item parent">
+								<a href="" class="uk-nav__link">{{link}}
+									<i class="icon-arrow-down js__toggle-subnav-wrapper"></i>
+								</a>
+								<div class="subnav-wrapper">
+									<ul class="subnav">
+										<li>
+											<a>Лицензии 1С:Предприятие 8</a>
+										</li>
+										<li>
+											<a>1С:Бухгалтерия 8</a>
+										</li>
+										<li>
+											<a>1С:Зарплата и Управление Персоналом 8</a>
+										</li>
+										<li>
+											<a>1С:Управление Торговлей 8</a>
+										</li>
+										<li>
+											<a>1С Комплексная Автоматизация 8</a>
+										</li>
+										<li>
+											<a>1С:Управление нашей фирмой 8</a>
+										</li>
+										<li>
+											<a>1С:Предприятие 8 CRM</a>
+										</li>
+										<li>
+											<a>1С:Управление по целям и KPI</a>
+										</li>
+										<li>
+											<a>1С:Документооборот 8</a>
+										</li>
+										<li>
+											<a>1С:ERP Управление предприятием 2</a>
+										</li>
+									</ul>
+									<div class="subnav-wrapper__content">
+										<div class="title-h3">Перейди в облако.
+											<br>Это надежнее, быстрее и дешевле</div>
+
+										<div class="btn-wrapper">
+											<a href="" class="btn btn--yellow">15 дней бесплатно</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						{% else %}
+							<li class="uk-nav__item parent">
+								<a href="" class="uk-nav__link">{{link}}
+									<i class="icon-arrow-down js__toggle-subnav-wrapper"></i>
+								</a>
+								<div class="subnav-wrapper"></div>
+							</li>
+						{% endif %}
+
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end offcanvas-menu -->

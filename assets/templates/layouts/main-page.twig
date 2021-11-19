@@ -1,0 +1,18 @@
+{% import "../mixins/svg.twig" as mixins %}
+{% set blueTheme = ' header--theme-blue' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+	{% include "../includes/head.twig" %}
+	<body>
+		<div class="page-wrapper">
+			{% include "../includes/header.twig" with {'theme': blueTheme} %}
+
+			<main class="main"> {% block content %}{% endblock %}
+				</main>
+				{% include "../includes/footer.twig" %}
+			</div>
+			{% include "../includes/modals.twig" %}
+			{% include "../includes/scripts.twig" %}
+		</body>
+	</html>

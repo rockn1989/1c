@@ -1,0 +1,25 @@
+{% extends "../layouts/default.twig" %}
+{% set title="404" %}
+
+{% block content %}
+
+	<!-- begin page-not-found -->
+	<div class="page-not-found">
+		<div class="uk-container">
+			<div class="uk-contaier">
+				<div class="page-not-found__title">404</div>
+				<div class="title-h1">Такой страницы не существует</div>
+				<div class="page-not-found__text">Ошибка! К сожалению запрашиваемая вами страница ненайдена.
+					<br>
+					Попробуйте воспользоваться поиском по сайту</div>
+
+				<form action="" class="default-form main-search-form">
+					<input type="text" placeholder="Введите поисковый запрос">
+					<button class="btn">Найти</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end page-not-found -->
+
+{% endblock %}

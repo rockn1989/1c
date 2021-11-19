@@ -1,0 +1,17 @@
+node_modules/
+bower_components/
+package-lock.json
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.vscode
+*.log
+*.psd
+*.ai
+*.pdf
+css/*.css
+dist/
+build/
+assets/img/icon-svg/sprite-svg.svg
+

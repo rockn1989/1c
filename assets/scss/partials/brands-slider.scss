@@ -1,0 +1,59 @@
+.brands-slider {
+  .slider {
+    height: 60px;
+    overflow: hidden;
+    &.slick-initialized {
+      height: auto;
+      overflow: visible;
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: -60px;
+      text-align: center;
+      li {
+        margin: 0 20px 0 0;
+        padding: 10px 0;
+        width: auto;
+        height: auto;
+        &:last-child {
+          margin-right: 0;
+        }
+        button {
+          padding: 0;
+          width: 10px;
+          height: 2px;
+          background-color: $gray;
+          transition: width 0.3s, background-color 0.3s ease;
+          &:before {
+            display: none;
+          }
+        }
+
+        &.slick-active {
+          button {
+            width: 48px;
+            background-color: $darkBlue;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-list {
+    margin: 0 -15px;
+  }
+  .slide {
+    margin: 0 15px;
+
+    &__img {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

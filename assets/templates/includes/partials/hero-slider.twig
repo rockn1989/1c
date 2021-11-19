@@ -1,0 +1,35 @@
+<!-- begin hero-slider -->
+<section class="hero-slider">
+	<div class="hero-slider__bg">
+		<picture>
+			<source srcset="img/media/main-page-banner.png" media="(min-width: 960px)">
+			<source srcset="img/media/main-page-banner-small.png" media="(min-width: 320px)">
+			<img src="img/media/main-page-banner.png" alt="" loading="lazy">
+		</picture>
+	</div>
+	<div class="uk-container">
+		<div class="slider">
+			{% for item in 0..3 %}
+				<div class="slide">
+					<div class="slide__content">
+						<div class="slide__title">
+							<div class="large-title">Заключите договор
+								<br>
+								Аренды 1С</div>
+						</div>
+						<div class="slide__body">
+							<div class="subtitle">Это удобнее, надежней и дешевле чем
+								<br>
+								собственные сервера и IT-отдел</div>
+						</div>
+						<div class="slide__footer">
+							<a href="" role="button" class="btn btn--yellow">Попробуйте 15 дней бесплатно</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="slider__counter">1/4</div>
+	</div>
+</section>
+<!-- end hero-slider -->

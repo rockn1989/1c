@@ -1,0 +1,60 @@
+.contacts-info {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    color: $black;
+    a {
+      font-size: 24px;
+      line-height: 28px;
+      color: $black !important;
+    }
+  }
+}
+
+.map {
+  margin-bottom: 20px;
+  height: 335px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 40px;
+    height: 500px;
+  }
+}
+
+.map-route {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 40px;
+  }
+  &__col {
+    &:nth-child(even) {
+      .map-route__item {
+        @media (min-width: $tablet-w) {
+          padding-left: 20px;
+          height: 100%;
+          border-left: 1px solid $gray;
+        }
+      }
+    }
+  }
+  &__item {
+    ul,
+    ol,
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: grayscale(100%);
+}

@@ -1,0 +1,40 @@
+html,
+body {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-family: $mainFont;
+  font-weight: 400;
+  color: $black;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+main {
+  flex-grow: 1;
+}
+
+picture {
+  display: block;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bg-dark-blue {
+  background-color: $darkBlue;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-green {
+  background-color: $green;
+}

@@ -1,0 +1,125 @@
+.default-form {
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 0;
+
+    & + * {
+      margin-top: 20px;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 17px 24px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: $white;
+    border: 1px solid $gray;
+    outline: none;
+    font-family: $mainFont;
+    ::placeholder {
+      color: $textColor;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $darkBlue;
+    }
+
+    &.error {
+      border-color: $error;
+    }
+  }
+
+  textarea {
+    padding: 17px 24px;
+    width: 100%;
+    min-height: 194px;
+    font-size: 20px;
+    line-height: 28px;
+    border: 1px solid $gray;
+    resize: vertical;
+    outline: none;
+    &:focus,
+    &:hover {
+      border-color: $darkBlue;
+    }
+  }
+
+  label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $textColor;
+
+    &.error {
+      color: $error;
+    }
+  }
+
+  .form-row {
+    margin-bottom: 20px;
+  }
+}
+
+.search-form {
+  position: relative;
+  margin-bottom: 40px;
+  input[type="text"] {
+    padding: 0 65px 20px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray;
+    outline: none;
+  }
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 0;
+    color: $darkBlue;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.main-search-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $mob-s) {
+    flex-wrap: nowrap;
+  }
+  button {
+    margin-top: 20px;
+    width: 100%;
+
+    @media (min-width: $mob-s) {
+      margin-top: 0;
+      margin-left: 20px;
+      width: auto;
+    }
+  }
+}
+
+.search-result {
+  &__message {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width: $mob-s) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

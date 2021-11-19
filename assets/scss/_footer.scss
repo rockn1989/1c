@@ -1,0 +1,86 @@
+.footer {
+  padding: 48px 0 8px;
+  background-color: $darkBlue;
+  flex-grow: 0;
+  color: $white;
+  @media (min-width: $tablet-w) {
+    padding: 96px 0;
+  }
+  &__inner {
+    padding-top: 20px;
+    border-top: 1.5px solid $white;
+  }
+
+  &__col {
+    height: 100%;
+  }
+
+  &__col-inner {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: $tablet-w) {
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+
+  &__list {
+    @include list-reset();
+    li {
+      margin-bottom: 10px;
+      line-height: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: inherit;
+
+        &:hover {
+          color: $yellow;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    @media (min-width: $tablet-w) {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .politics {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: inherit;
+    &:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}

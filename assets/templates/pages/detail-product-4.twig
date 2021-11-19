@@ -1,0 +1,207 @@
+{% extends "../layouts/sales-page.twig" %}
+{% set title="1С:Управление Торговлей" %}
+{% set idSection="id='products'" %}
+{% set bread = ['Купить 1С', '1С:Управление Торговлей'] %}
+
+{% block saleInfo %}
+	<div class="uk-grid">
+		<div class="uk-width-5-6@m">
+			<h1>1С:Управление Торговлей</h1>
+			<div class="sale-info__text">
+				<p>Эффективность, простота использования и максимальная точность составления отчетов сделала программные продукты 1С стандартом учетных решений более чем для 130 тысяч бюджетных организаций по всей России. Новые версии программы созданы на технологической платформе «1С:Предприятие 8», которая возводит стандарт на новый технологический уровень.</p>
+			</div>
+
+			<div class="horizontal-panel">
+				<a href="" class="btn btn--md btn--yellow" role="button">Все предложения</a>
+				<a href="" class="btn btn--md btn--white" role="button">Заказать демонстрацию</a>
+				<div class="text-price">от 14 400 р.</div>
+			</div>
+		</div>
+		<div class="uk-width-1-6@m uk-visible@m">
+			<ul class="vertical-anchors-links">
+				<li>
+					<a href="#results" uk-scroll="offset: 70">Что получите</a>
+				</li>
+				<li>
+					<a href="#products" uk-scroll="offset: 70">Продукты</a>
+				</li>
+				<li>
+					<a href="#auto" uk-scroll="offset: 70">Автоматизация</a>
+				</li>
+				<li>
+					<a href="#buy" uk-scroll="offset: 70">Купить</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+	<section class="progress-section">
+
+		<div class="uk-container">
+			<ul class="progress-list uk-child-width-1-3@m" uk-grid>
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/pazl.svg" width="75" height="67" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Установка и обучение</div>
+					</div>
+				</li>
+
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/1c-icon.svg" width="81" height="44" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Бесплатная поддержка
+							<br>
+							и обновление</div>
+					</div>
+				</li>
+
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/rocket.svg" width="53" height="71" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Оперативные консультации</div>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+
+	</section>
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="results" class="title-h2">Среди самых популярных программных решений 1С для бюджетных учреждений можно выделить</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="grid-divider-large uk-child-width-1-2@m" uk-grid>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<a href="" class="title-h3 icon-chevron-right">1С:Бухгалтерия государственного учреждения 8 ПРОФ</a>
+								<p class="big-text">программный продукт обеспечивает автоматизацию бухгалтерского учета муниципальных учреждений, которые состоят на самостоятельном балансе и финансируются из местного, регионального или федерального бюджетов.</p>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<a href="" class="title-h3 icon-chevron-right">1С:Свод отчетов 8 ПРОФ</a>
+								<p class="big-text">программный продукт помогает автоматизировать процесс сбора, анализа, консолидации и проверки бюджетной отчетности. Кроме этого, программа необходима для ведения произвольной аналитической и статистической отчетности.</p>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<a href="" class="title-h3 icon-chevron-right">1С:Зарплата и кадры бюджетного учреждения 8</a>
+								<p class="big-text">незаменимый инструмент для комплексной автоматизации ведения кадрового учета и расчета заработной платы в государственных учреждениях</p>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<a href="" class="title-h3 icon-chevron-right">1С:Бухгалтерия автономного учреждения 8 (хозрасчетный план счетов) версии ПРОФ и КОРП</a>
+								<p class="big-text">
+									Программное решение помогает автоматизировать ведение отчетов для малых и средних автономных учреждение.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	{% include "../includes/partials/products-slider.twig" with {'id': idSection} %}
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="auto" class="title-h2">Почему выгодно покупать программы 1С
+						<br>
+						для бюджетных учреждений в компании «1С:Франчайзи Виктория»?</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="grid-divider-large uk-grid-collapse uk-child-width-1-2@s uk-grid" uk-grid>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="division">
+									<div class="division__img">
+										<img src="img/media/1c-cloud.svg" width="305" height="166" alt="" loading="lazy">
+									</div>
+
+									<div class="division__role">Услуги опытных специалистов</div>
+									<div class="division__text">
+										Наши квалифицированные специалисты прошли сертификацию в фирме «1С», поэтому знают все тонкости работы с программными продуктами 1С. При необходимости они произведут настройку 1С удаленно или с выездом к вам в офис.
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="division">
+									<div class="division__img">
+										<img src="img/media/big-cart.svg" width="244" height="185" alt="" loading="lazy">
+									</div>
+
+									<div class="division__role">Доступные курсы обучения</div>
+									<div class="division__text">
+										Если вы только начинаете пользоваться программами 1С для бюджетных учреждений или хотите повысить свой уровень знаний, тогда приглашаем вас посетить наши профильные курсы. Вы узнаете, как эффективно использовать программные решения 1С и на личном примере убедитесь в том, что они ваши лучшие помощники в работе.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="buy" class="title-h2 uk-margin-small-bottom">Купить программные продукты 1С для бюджетных учреждений по самым доступным ценам.</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="lead-text">
+						Наша компания является официальным представителем фирмы 1С в Москве, поэтому в качестве и эффективности программных продуктов вы можете не сомневаться. Мы предоставляем и другие услуги 1С, о которых вам расскажут наши менеджеры по телефону +7(495)786-21-46.
+					</div>
+					<a href="#callback" class="btn btn--yellow">Заказать демонстрацию</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+{% endblock %}
+
+{% block afterContent %}
+
+	<!-- begin promo-section -->
+	<section class="promo-section">
+		<div class="uk-container">
+			<h2 class="title-h2">Хотите стать профи в работе с программой «1С»? Записывайтесь на наши курсы!
+			</h2>
+
+			<a href="#callback-modal" class="btn btn--yellow" uk-toggle>Записаться на курсы</a>
+		</div>
+	</section>
+	<!-- end promo-section -->
+
+{% endblock %}

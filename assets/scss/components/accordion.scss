@@ -1,0 +1,60 @@
+.uk-accordion {
+  & > li {
+    margin-bottom: 0 !important;
+    padding: 20px 0;
+    border-bottom: 1px solid $gray;
+    list-style: none;
+    &:first-child {
+      border-top: 1px solid $gray;
+    }
+
+    &.uk-open {
+      border-bottom-color: $black;
+      .uk-accordion-title {
+        color: $black;
+        &:before {
+          background-image: url("../img/icon-svg/minus.svg");
+        }
+      }
+    }
+    @media (min-width: $tablet-w) {
+      padding: 48px 0;
+    }
+  }
+  .uk-accordion-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: $darkBlue;
+
+    @media (min-width: $tablet-w) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &:before {
+      background-size: 48px;
+      background-image: url("../img/icon-svg/plus.svg");
+    }
+  }
+
+  .uk-accordion-content {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &.uk-accordion--white {
+    & > li {
+      padding: 30px 20px;
+      background-color: $white;
+      border: none;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+}
+
+.uk-accordion > :nth-child(n + 2) {
+  margin-top: 10px;
+}

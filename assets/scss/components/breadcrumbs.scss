@@ -1,0 +1,51 @@
+.breadcrumbs-wrapper {
+  margin: 100px 0 20px;
+}
+
+.breadcrumbs {
+  @include list-reset;
+  font-size: 0;
+  line-height: 0;
+  li {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 14px;
+    line-height: 16px;
+    a,
+    span {
+      font-size: 18px;
+      line-height: 21px;
+      color: $darkBlue;
+    }
+    a {
+      position: relative;
+      margin-right: 16px;
+      padding-right: 23px;
+      &:hover {
+        color: $blue;
+      }
+      &:after {
+        content: "/";
+        position: absolute;
+        top: 1px;
+        right: 0;
+        font-size: 16px;
+        line-height: 1;
+        color: $gray;
+      }
+    }
+  }
+
+  &--theme-white {
+    li {
+      a,
+      span {
+        color: $white;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

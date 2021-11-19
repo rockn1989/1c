@@ -1,0 +1,148 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Вопросы и ответы" %}
+{% set bread = ['О компании', 'Вопросы и ответы'] %}
+{% set accordionTitles = [
+    'Как выполнить печать нескольких документов?',
+    'Как добавить табличную часть в банковскую выписку?',
+    'Что такое календарь бухгалтера?',
+    'Как списать расходы равными долями в течение налогового периода?',
+    'Как внести валютный счет?',
+    'Как выполнить печать нескольких документов?',
+    'Как сформировать и отправить в Сбербанк отчетность заемщика?',
+    'Как отключить всплывающие оповещения новостей?',
+    'Как оформить продажу ОС с отсрочкой перехода права собственности?',
+  ] 
+%}
+
+{% block content %}
+	<!-- begin faq-section -->
+	<section class="faq-section">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-2-3@m uk-flex-last uk-flex-first@m">
+					<h1 class="uk-visible@m">Вопросы и ответы</h1>
+
+
+					{% include "../includes/components/accordion.twig" %}
+					<a href="" class="btn btn--full-width uk-margin-large-bottom">Показать еще</a>
+					{% include "../includes/components/pagination.twig" %}
+				</div>
+				<div class="uk-width-1-3@m ">
+					<aside class="right-sidebar">
+						<div class="title-h1 uk-hidden@m">Вопросы и ответы</div>
+						<div class="title-h5 uk-text-uppercase uk-margin-medium-bottom">Поиск по вопросам</div>
+
+						<form action="" class="search-form">
+							<input type="text" placeholder="Начните вводить название продукта">
+							<button type="submit">Найти</button>
+						</form>
+						<div class="title-h5 uk-text-uppercase uk-margin-medium-bottom uk-visible@m">Выберите раздел</div>
+						<ul class="list-chapter uk-visible@m">
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">Все вопросы</a>
+								<span class="list-chapter__count">1078</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Бухгалтерия 8</a>
+								<span class="list-chapter__count">359</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Зарплата и Управление</a>
+								<span class="list-chapter__count">174</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">Персоналом 8</a>
+								<span class="list-chapter__count">80</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Комплексная Автоматизация 8</a>
+								<span class="list-chapter__count">174</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Управление Торговлей 8</a>
+								<span class="list-chapter__count">7</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Управление производственым предприятием 8</a>
+								<span class="list-chapter__count">6</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">Бюджетная сфера</a>
+								<span class="list-chapter__count">33</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">1С:Бухгалтерия 7.7</a>
+								<span class="list-chapter__count">4</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">Управление нашей фирмой</a>
+								<span class="list-chapter__count">5</span>
+							</li>
+							<li class="list-chapter__item">
+								<a href="" class="list-chapter__link">Остальные вопросы</a>
+								<span class="list-chapter__count">34</span>
+							</li>
+						</ul>
+						<a href="" class="btn btn--yellow uk-visible@m">Задать свой вопрос</a>
+
+						<div class="dropdown-panel uk-hidden@m">
+							<div class="dropdown-panel__title">
+								<span class="js__toggle-hidden-block">Все разделы</span>
+							</div>
+							<div class="dropdown-panel__content hidden-block">
+								<ul class="list-chapter">
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">Все вопросы</a>
+										<span class="list-chapter__count">1078</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Бухгалтерия 8</a>
+										<span class="list-chapter__count">359</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Зарплата и Управление</a>
+										<span class="list-chapter__count">174</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">Персоналом 8</a>
+										<span class="list-chapter__count">80</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Комплексная Автоматизация 8</a>
+										<span class="list-chapter__count">174</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Управление Торговлей 8</a>
+										<span class="list-chapter__count">7</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Управление производственым предприятием 8</a>
+										<span class="list-chapter__count">6</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">Бюджетная сфера</a>
+										<span class="list-chapter__count">33</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">1С:Бухгалтерия 7.7</a>
+										<span class="list-chapter__count">4</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">Управление нашей фирмой</a>
+										<span class="list-chapter__count">5</span>
+									</li>
+									<li class="list-chapter__item">
+										<a href="" class="list-chapter__link">Остальные вопросы</a>
+										<span class="list-chapter__count">34</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end faq-section -->
+{% endblock %}

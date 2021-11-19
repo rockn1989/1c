@@ -1,0 +1,54 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Отзывы" %}
+{% set bread = ['О компании', 'Отзывы'] %}
+
+{% block content %}
+
+	<div class="reviews-detail">
+		<div class="uk-container">
+			<h1>Отзыв компании "ООО "ОСНОВА" о «1С:Франчайзи Виктория»</h1>
+
+			<div class="underline-title">17 июня 2021</div>
+			<div class="review-post">
+				<div class="uk-grid">
+					<div class="uk-width-2-3@s uk-flex-last uk-flex-first@s">
+						<div class="review-post__text">
+							<p>ООО "ОСНОВА" выражает благодарность специалистам ООО "1С:Франчайзи Виктория" за доброжелательность и высокий профессионализм в работе, за быстродействие в решении задач, возникающих в работе с программой 1С.</p>
+
+							<p>Обновление программы происходит своевременно. Все материалы по изменениям и диски ИТС поставляются регулярно. При возникновении ряда технических проблем, специалисты очень компетентно и оперативно решают их в формате удаленного доступа.</p>
+
+							<p>Большое спасибо хочется сказать менеджерам за индивидуальный подход, за за способность услышать и предложить лучшее решение того или иного вопроса.</p>
+
+							<p>Надеемся на дальнейшее позитивное сотрудничество.
+							</p>
+						</div>
+						<div class="review-post__author">
+							Генеральный директор
+							<br>
+							Белов А.Н.
+						</div>
+					</div>
+					<div class="uk-width-1-3@s">
+						<div class="review-post__img">
+							<img src="img/media/review-lg.png" alt="" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="small-title">Использованные программные продукты:</div>
+			<ul class="products-list">
+				<li>
+					<a href="">1С CRM</a>
+				</li>
+				<li>
+					<a href="">1С Упрощенка 8</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	{% include "../includes/partials/reviews-slider.twig" %}
+
+{% endblock %}

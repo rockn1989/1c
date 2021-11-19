@@ -1,0 +1,94 @@
+.compare-table {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 40px;
+  }
+
+  &__header {
+    .compare-table__td {
+      color: $white;
+      background-color: $darkBlue;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  &__td {
+    padding: 20px;
+    height: 100%;
+    &.bold {
+      font-weight: 700;
+    }
+
+    .minus,
+    .plus {
+      position: relative;
+      display: block;
+      padding-left: 30px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .minus {
+      &:before {
+        background-image: url("../img/icon-svg/cross.svg");
+      }
+    }
+
+    .plus {
+      &:before {
+        background-image: url("../img/icon-svg/check.svg");
+      }
+    }
+  }
+
+  &__body {
+    .compare-table__td {
+      border-bottom: 1px solid $gray;
+      font-size: 14px;
+      line-height: 20px;
+
+      @media (min-width: $tablet-w) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    .uk-grid {
+      &:nth-child(even) {
+        .compare-table__td {
+          background-color: $bgGray;
+        }
+      }
+
+      & > div {
+        &:first-child {
+          .compare-table__td {
+            font-size: 18px;
+            line-height: 21px;
+            @media (max-width: #{$mob-s - 1px}) {
+              color: $white;
+              background-color: $darkBlue;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,37 @@
+.certificates-list {
+  @include list-reset();
+  margin-bottom: 0 !important;
+  & > li {
+    list-style: none;
+  }
+  &__row {
+    &:last-child {
+      margin-bottom: 0 !important;
+      border: none;
+      .certificates-list__item {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: 80px !important;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &__item {
+    @media (min-width: $tablet-w) {
+      padding-bottom: 80px;
+    }
+  }
+
+  .uk-grid {
+    & > div {
+      margin-bottom: 48px;
+
+      @media (min-width: $tablet-w) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

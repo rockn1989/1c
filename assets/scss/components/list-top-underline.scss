@@ -1,0 +1,16 @@
+.list-top-underline {
+  & > li {
+    margin-bottom: 0 !important;
+    list-style: none;
+  }
+  &__item {
+    border-top: 1.5px solid $darkBlue;
+    padding: 28px 0 48px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $darkBlue;
+  }
+  .uk-grid-margin {
+    margin-top: 0;
+  }
+}

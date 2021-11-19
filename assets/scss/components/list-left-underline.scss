@@ -1,0 +1,28 @@
+.list-left-underline {
+  & > li {
+    margin-bottom: 0 !important;
+    list-style: none;
+  }
+
+  &__item {
+    padding-left: 20px;
+    height: 100%;
+    color: $darkBlue;
+    font-size: 14px;
+    line-height: 20px;
+    border-left: 1.5px solid $darkBlue;
+
+    @media (min-width: $tablet-w) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  .uk-grid-margin {
+    margin-top: 48px;
+
+    @media (min-width: $tablet-w) {
+      margin-top: 96px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.blue-promo-block {
+  padding: 20px;
+  background: $darkBlue url("../img/blue-triangle.svg") 100% 100% no-repeat;
+  background-size: 130px;
+
+  @media (min-width: $tablet-w) {
+    padding: 40px;
+    background: $darkBlue url("../img/blue-triangle.svg") 100% 40px no-repeat;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: $white;
+    font-size: 20px;
+    line-height: 28px;
+
+    @media (min-width: $tablet-w) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .btn.btn--yellow {
+    &:hover {
+      border-color: $yellow;
+    }
+  }
+}

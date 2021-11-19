@@ -1,0 +1,20 @@
+.page-not-found {
+  text-align: center;
+
+  &__title {
+    color: $darkBlue;
+    @include adpFont(144, 144, 400, 400, 320, 1200);
+    @supports (-webkit-text-stroke: 1px $darkBlue) {
+      -webkit-text-stroke: 1px $darkBlue;
+      color: transparent;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @media (min-width: $tablet-w) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+}

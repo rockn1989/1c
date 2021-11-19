@@ -1,0 +1,59 @@
+.btn {
+  padding: 20px 26px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: $darkBlue;
+  border: 1.5px solid $darkBlue;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background: $darkBlue;
+  }
+
+  &--yellow {
+    color: $darkBlue;
+    background-color: $yellow;
+    border-color: $yellow;
+    font-weight: 500;
+    &:hover {
+      color: $white;
+      background-color: transparent;
+    }
+  }
+
+  &--white {
+    border-color: $white;
+    color: $white;
+    &:hover {
+      border-color: $yellow;
+    }
+  }
+
+  &--gray {
+    color: $darkBlue;
+    border-color: $bgGray;
+    background-color: $bgGray;
+    &:hover {
+      color: $white;
+      background-color: $darkBlue;
+      border-color: $darkBlue;
+    }
+  }
+
+  &--full-width {
+    width: 100%;
+    display: block;
+  }
+
+  &--md {
+    width: 100%;
+    max-width: 300px;
+  }
+}

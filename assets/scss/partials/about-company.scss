@@ -1,0 +1,12 @@
+.about-company {
+  color: $darkBlue;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1084px;
+  }
+}

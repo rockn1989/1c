@@ -1,0 +1,21 @@
+.list-bottom-underline {
+  @include list-reset();
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  li {
+    margin: 0 !important;
+    list-style: none;
+    padding: 18px 0;
+    border-bottom: 1px solid $gray;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}

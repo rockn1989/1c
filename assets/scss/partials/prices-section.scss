@@ -1,0 +1,127 @@
+.price-table {
+  display: block;
+
+  @media (min-width: $tablet-w) {
+    display: table;
+  }
+  a {
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  thead {
+    display: block;
+
+    @media (min-width: $tablet-w) {
+      display: table-row-group;
+    }
+
+    tr {
+      width: 100%;
+      th {
+        display: none;
+
+        @media (min-width: $tablet-w) {
+          display: table-cell;
+        }
+
+        &.mobile-title {
+          display: block;
+          width: 100%;
+
+          @media (min-width: $tablet-w) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    display: block;
+
+    @media (min-width: $tablet-w) {
+      display: table-row-group;
+    }
+
+    tr {
+      display: block;
+      border-bottom: 1.2px solid #c9c9cf;
+
+      @media (min-width: $tablet-w) {
+        display: table-row;
+        border: none;
+      }
+
+      td {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: none;
+
+        &.mobile-content {
+          &:before {
+            content: attr(data-content);
+            font-size: 18px;
+            line-height: 24px;
+            display: inline-block;
+            max-width: 245px;
+
+            @media (min-width: $tablet-w) {
+              display: none;
+            }
+          }
+        }
+
+        @media (min-width: $tablet-w) {
+          padding: 20px;
+          display: table-cell;
+          vertical-align: middle;
+          width: auto;
+          border-bottom: 1.2px solid #c9c9cf;
+        }
+
+        &:first-child {
+          text-transform: uppercase;
+          font-weight: 500;
+          width: 100%;
+
+          @media (min-width: $tablet-w) {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  .buy-button {
+    color: $darkBlue;
+  }
+}
+
+.price-product {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  &__value {
+    color: $black;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.buy-button {
+  display: block;
+  color: $darkBlue;
+
+  &:hover {
+    color: $blue;
+  }
+}

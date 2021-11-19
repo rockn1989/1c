@@ -1,0 +1,51 @@
+{% extends "../components/content-group.twig" %}
+{% set title = "Новости" %}
+{% set subtitle = "Все новости" %}
+{% set modifyClass = " bgGray uk-margin-remove-bottom" %}
+
+{% block content %}
+	<!-- begin news-section -->
+	<div class="news-section">
+
+		<div class="news-list">
+			<div class="news-list__item-main">
+
+				<article class="post">
+					<div class="post__date">12 июня 2021</div>
+					<div class="post__title">
+						<a href="">Акция для пользователей базовых версий программ 1С</a>
+					</div>
+					<div class="post__text">Всем пользователям базовых версий программ 1С предлагается принять участие в акции по переходу в облачный сервис «1С:Фреш» на суперусловиях</div>
+				</article>
+			</div>
+
+			<div class="news-list__items">
+				<div class="news-list__item">
+
+					<article class="post">
+						<div class="post__date">12 июня 2021</div>
+						<div class="post__title">
+							<a href="">Акция для пользователей базовых версий программ 1С</a>
+						</div>
+						<div class="post__text">Всем пользователям базовых версий программ 1С предлагается принять участие в акции по переходу в облачный сервис «1С:Фреш» на суперусловиях</div>
+					</article>
+				</div>
+
+				<div class="news-list__item">
+					<article class="post">
+						<div class="post__date">24 июня 2021</div>
+						<div class="post__title">
+							<a href="">Единый онлайн‑семинар «1С» для бухгалтеров и руководителей</a>
+						</div>
+						<div class="post__text">16 декабря 2020 года состоится Единый онлайн-семинар 1С для бухгалтеров и руководителей</div>
+					</article>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- end news-section -->
+
+	{% include "./brands-slider.twig" %}
+{% endblock %}

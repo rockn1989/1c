@@ -1,0 +1,221 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Корзина" %}
+{% set bread = ['Обучение', 'Корзина'] %}
+
+{% block content %}
+
+
+	<!-- begin basket-section -->
+	<section class="basket-section">
+		<div class="uk-container">
+			<h1>Корзина</h1>
+
+
+			<div class="basket-form">
+				<form action="">
+					<div class="order-list">
+						<div class="order-item">
+							<div class="order-item__info">
+								<a href="">1С:Управление торговлей 8</a>
+							</div>
+							<div class="order-item__action">
+								{% include "../includes/components/calc.twig" %}
+								<div class="order-item__amount">26 600 р.</div>
+							</div>
+							<a href="#" class="button-close js__delete-order-item" role="button" uk-close></a>
+						</div>
+
+						<div class="order-item">
+							<div class="order-item__info">
+								<a href="">1С:Управление торговлей 8</a>
+							</div>
+							<div class="order-item__action">
+								{% include "../includes/components/calc.twig" %}
+								<div class="order-item__amount">26 600 р.</div>
+							</div>
+							<a href="#" class="button-close js__delete-order-item" role="button" uk-close></a>
+						</div>
+
+						<div class="order-item">
+							<div class="order-item__info">
+								<a href="">1С:Бюджет поселения 8</a>
+							</div>
+							<div class="order-item__action">
+								{% include "../includes/components/calc.twig" %}
+								<div class="order-item__amount">40 800 р.</div>
+							</div>
+							<a href="#" class="button-close js__delete-order-item" role="button" uk-close></a>
+						</div>
+					</div>
+					<div class="order-total">
+						<div class="order-total__title">
+							<div class="order-total__text">Итого</div>
+							<div class="order-total__amount">67 600 р.</div>
+						</div>
+						<button class="btn btn--yellow btn--full-width" type="submit">Оформить заказ</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</section>
+	<!-- end basket-section -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2>
+						С этим часто заказывают</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="products-slider">
+						<div class="slider">
+							<div class="slide">
+								<div class="product-small-card">
+									<div class="product-small-card__title">
+										<a href="">Лицензии 1С:Предприятие 8</a>
+									</div>
+									<div class="product-small-card__time product-small-card__time--bg-yellow">5 бесплатных часов</div>
+									<div class="product-small-card__price">
+										<div class="product-small-card__old-price">32 900 р.</div>
+										<div class="product-small-card__current-price">22 690 р.</div>
+									</div>
+									<div class="product-small-card__buttons">
+										<a href="" class="btn">Купить</a>
+										<a href="" class="btn btn--gray">Демонстрация</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="product-small-card">
+									<div class="product-small-card__title">
+										<a href="">1С:Бухгалтерия 8</a>
+									</div>
+									<div class="product-small-card__time product-small-card__time--bg-yellow">7 бесплатных часов</div>
+									<div class="product-small-card__price">
+										<div class="product-small-card__old-price"></div>
+										<div class="product-small-card__current-price">12 780 р.</div>
+									</div>
+									<div class="product-small-card__buttons">
+										<a href="" class="btn">Купить</a>
+										<a href="" class="btn btn--gray">Демонстрация</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="product-small-card">
+									<div class="product-small-card__title">
+										<a href="">1С:Зарплата и Управление Персоналом 8</a>
+									</div>
+									<div class="product-small-card__time product-small-card__time--bg-yellow">2 бесплатных часа</div>
+									<div class="product-small-card__price">
+										<div class="product-small-card__old-price">14 900 р.</div>
+										<div class="product-small-card__current-price">7 890 р.</div>
+									</div>
+									<div class="product-small-card__buttons">
+										<a href="" class="btn">Купить</a>
+										<a href="" class="btn btn--gray">Демонстрация</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="product-small-card">
+									<div class="product-small-card__title">
+										<a href="">1С:Зарплата и Управление Персоналом 8</a>
+									</div>
+									<div class="product-small-card__time product-small-card__time--bg-yellow">2 бесплатных часа</div>
+									<div class="product-small-card__price">
+										<div class="product-small-card__old-price">14 900 р.</div>
+										<div class="product-small-card__current-price">7 890 р.</div>
+									</div>
+									<div class="product-small-card__buttons">
+										<a href="" class="btn">Купить</a>
+										<a href="" class="btn btn--gray">Демонстрация</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin form-section -->
+	<section class="form-section">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-1-2@m">
+					<div class="vertical-box">
+						<div class="title-h2">Оформление
+							<br>заказа</div>
+						<div class="uk-visible@m">
+							<div class="gray-subtitle">* - поля обязательные для заполнения</div>
+							<div class="politics">
+								Нажимая на кнопку Оформить,<br>
+								я даю согласие на обработку
+								<a href="">персональных данных</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-2@m">
+					<form action="" class="default-form">
+						<div class="form-row">
+							<label for="user-name">Ваше имя</label>
+							<input type="text" id="user-name" name="user-name" placeholder="Иванов Иван">
+						</div>
+						<div class="form-row">
+							<label for="user-tel">Телефон
+								<sup>*</sup>
+							</label>
+							<input type="text" id="user-tel" class="js__input-mask" name="user-tel" placeholder="+7 ( )" required>
+						</div>
+						<div class="form-row">
+							<label for="user-email">Почта
+								<sup>*</sup>
+							</label>
+							<input type="text" id="user-email" name="user-email" placeholder="example@mail.com" required>
+						</div>
+						<div class="form-row">
+							<textarea name="user-message"></textarea>
+						</div>
+
+						<button class="btn btn--yellow btn--full-width">Офрмить заказ</button>
+					</form>
+					<div class="uk-hidden@m">
+						<div class="gray-subtitle">* - поля обязательные для заполнения</div>
+						<div class="politics">
+							Нажимая на кнопку Оформить,<br>
+							я даю согласие на обработку
+							<a href="">персональных данных</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end form-section -->
+
+
+{% endblock %}
+
+{% block afterContentBlock %}
+
+	<!-- begin promo-section -->
+	<section class="promo-section">
+		<div class="uk-container">
+			<h2 class="title-h2">Узнать стоимость курса и оставить заявку
+				<br>Вы можете по телефону: +7 (495) 786 21 46
+			</h2>
+
+			<a href="#callback-modal" class="btn btn--yellow" uk-toggle>Заказать обратный звонок</a>
+		</div>
+	</section>
+	<!-- end promo-section -->
+
+{% endblock %}

@@ -1,0 +1,7 @@
+.basket-section {
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 96px;
+  }
+}

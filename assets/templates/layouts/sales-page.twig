@@ -1,0 +1,26 @@
+{% import "../mixins/svg.twig" as mixins %}
+{% set blueTheme = ' header--theme-blue' %}
+{% set whiteTheme = ' breadcrumbs--theme-white' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+	{% include "../includes/head.twig" %}
+	<body>
+		<div class="page-wrapper">
+			{% include "../includes/header.twig" with {'theme': blueTheme} %}
+			{% include "../includes/components/breadcrumbs.twig" with {'theme': whiteTheme} %}
+			<main class="main">
+				<div class="sale-info">
+					<div class="uk-container"> {% block saleInfo %}{% endblock %}
+						</div>
+					</div>
+					<section class="content"> {% block content %}{% endblock %}
+						</section>
+						{% block afterContent %}{% endblock %}
+					</main>
+					{% include "../includes/footer.twig" %}
+				</div>
+				{% include "../includes/modals.twig" %}
+				{% include "../includes/scripts.twig" %}
+			</body>
+		</html>

@@ -1,0 +1,25 @@
+{% extends "../components/content-group.twig" %}
+{% set title = "Новости по теме" %}
+{% set modifyClass = " bgGray uk-margin-remove-bottom" %}
+
+{% block content %}
+
+	<!-- begin news-slider -->
+	<div class="news-slider content-slider">
+		<div class="slider">
+			{% for item in 1..3 %}
+				<div class="slide">
+					<article class="post">
+						<div class="post__date">12 июня 2021</div>
+						<div class="post__title">
+							<a href="">Акция для пользователей базовых версий программ 1С</a>
+						</div>
+						<div class="post__text">Всем пользователям базовых версий программ 1С предлагается принять участие в акции по переходу в облачный сервис «1С:Фреш» на суперусловиях</div>
+					</article>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!-- end news-slider -->
+
+{% endblock %}

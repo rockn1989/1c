@@ -1,0 +1,170 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Контакты" %}
+{% set bread = ['О компании', 'Контакты'] %}
+
+{% block content %}
+
+	<!-- begin contacts-section -->
+	<section class="contacts-section">
+		<div class="uk-container">
+			<h1>Контакты</h1>
+
+			<ul class="anchors-links">
+				<li>
+					<a href="#ms" uk-scroll="offset: 70;">Москва</a>
+				</li>
+				<li>
+					<a href="#sp" uk-scroll="offset: 70;">Санкт-Петербург</a>
+				</li>
+			</ul>
+
+			<div id="ms" class="contacts-info uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Телефон</div>
+						<div class="contacts-info__desc">
+							<a href="tel:+74957862146">+7 (495) 786 21 46</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Электронная почта</div>
+						<div class="contacts-info__desc">
+							<a href="mailto:info@1c-victory.ru">info@1c-victory.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Skype</div>
+						<div class="contacts-info__desc">
+							<a href="skype:1С:Виктория">1С:Виктория</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Адрес</div>
+						<div class="contacts-info__desc">Москва, м. Авиамоторная, ул. 2-ая Синичкина, д.9А стр.10, бизнес-центр «Синица - Плаза», этаж 4</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Почтовый адрес</div>
+						<div class="contacts-info__desc">105275 г. Москва, Шоссе Энтузиастов, д. 29</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Режим работы</div>
+						<div class="contacts-info__desc">Понедельник-пятница с 10:00—19:00</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="map-1" class="map" data-coords="55.76057, 37.718238"></div>
+
+			<div class="map-route uk-child-width-1-2@m" uk-grid>
+				<div class="map-route__col">
+					<div class="map-route__item">
+						<div class="title-h4">Как доехать до офиса 1С Франчайзи Виктория в Москве на авто?</div>
+						<ol>
+							<li>От станции метро «Авиамоторная» направляйтесь на север по ул. Авиамоторная 900 м.</li>
+							<li>Плавно поверните направо на пер. Юрьевский и поезжайте 150 м.</li>
+							<li>Доезжаете до первого перекрестка и поворачиваете направо. Наш офис находится в бизнес-центре «Синица плаза». Рядом есть бесплатная парковка, где вы сможете оставить свое авто.</li>
+						</ol>
+						<p>Всего поездка на авто займет не больше 3-х минут.</p>
+						<a href="">Схема проезда</a>
+					</div>
+				</div>
+				<div class="map-route__col">
+					<div class="map-route__item">
+						<div class="title-h4">Если вы будете идти пешком, тогда вам стоит придерживаться следующего маршрута:</div>
+						<ol>
+							<li>От станции метро «Авиамоторная» нужно дойти до Лефортовского рынка — 400 м</li>
+							<li>На Лефортовском рынке сесть на троллейбус 32 и проехать 1 остановку в направлении станции метро «Партизанская».</li>
+							<li>Пройти до бизнес-центра «Синица плаза».</li>
+						</ol>
+						<p>Расстояние от метро «Авиамоторная» до нашего офиса – 1,1 км, это расстояние вы сможете преодолеть пешком всего за 13 минут.</p>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="sp" class="contacts-info uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Телефон</div>
+						<div class="contacts-info__desc">
+							<a href="tel:+78126444419">+7 (812) 644 44 19</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Электронная почта</div>
+						<div class="contacts-info__desc">
+							<a href="mailto:spb@1c-victory.ru">spb@1c-victory.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Skype</div>
+						<div class="contacts-info__desc">
+							<a href="skype:1С:Виктория">1С:Виктория</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Адрес</div>
+						<div class="contacts-info__desc">Санкт-Петербург, ул. Седова, д. 11, лит. А, 1 этаж, оф. 918, 922</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Почтовый адрес</div>
+						<div class="contacts-info__desc">105275 г. Москва, Шоссе Энтузиастов, д. 29</div>
+					</div>
+				</div>
+				<div class="contacts-info__col">
+					<div class="contacts-info__item">
+						<div class="contacts-info__title">Режим работы</div>
+						<div class="contacts-info__desc">Понедельник-пятница с 10:00—19:00</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="map-2" class="map" data-coords="59.899803,30.40101"></div>
+
+			<div class="map-route uk-child-width-1-2@m" uk-grid>
+				<div class="map-route__col">
+					<div class="map-route__item">
+						<div class="title-h4">Как доехать до офиса 1С Франчайзи Виктория в Санкт-Петербурге  на авто?</div>
+						<ol>
+							<li>От станции метро «Елизаровская» направляйтесь на юго-запад по пр. Елизарова в сторону ул. Бабушкина.</li>
+							<li>Поверните направо на ул. Седова и поезжайте до супермаркета «Ашан».</li>
+						</ol>
+						<p>Всего поездка на авто займет не больше 5 минут.</p>
+						<a href="">Схема проезда</a>
+					</div>
+				</div>
+				<div class="map-route__col">
+					<div class="map-route__item">
+						<div class="title-h4">Если вы будете идти пешком, тогда вам стоит придерживаться следующего маршрута:</div>
+						<ol>
+							<li>От метро «Елизаровская» ходит маршрутный автобус К16, на котором нужно проехать 4 остановки в направлении Площади Александра Невского.</li>
+							<li>От площади Бехтерева пройдите до ул. Седова, наше офисное здание будет находиться справа.</li>
+						</ol>
+						<p>Расстояние от станции метро «Елизаровская» до нашего офиса составляет 1,6 км, путь пешком займет 20 минут.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contacts-section -->
+
+{% endblock %}

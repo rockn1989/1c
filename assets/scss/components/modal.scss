@@ -1,0 +1,90 @@
+.modal-default {
+  z-index: 9999;
+
+  .uk-modal-dialog {
+    padding: 48px 0;
+    width: 100%;
+
+    @media (min-width: $tablet-w) {
+      padding: 96px 0;
+    }
+  }
+
+  .uk-modal-header {
+    position: relative;
+    border: none;
+    background-color: transparent;
+  }
+
+  .uk-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-w) {
+      transform: translateY(-50%);
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      color: $gray;
+
+      @media (min-width: $tablet-w) {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    &:hover {
+      svg {
+        color: $darkBlue;
+      }
+    }
+  }
+
+  .uk-modal-body {
+    padding: 0;
+  }
+
+  .btn.btn--yellow {
+    &:hover {
+      color: $white;
+      background-color: $darkBlue;
+      border-color: $darkBlue;
+    }
+  }
+
+  &--theme-blue {
+    .uk-modal-dialog {
+      color: $white;
+      background-color: $darkBlue;
+
+      a {
+        color: $white;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $white;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $yellow;
+          border-color: $yellow;
+        }
+      }
+    }
+
+    .uk-modal-close {
+      @media (min-width: $tablet-w) {
+        right: 20px;
+      }
+      svg {
+        color: $white;
+      }
+
+      &:hover {
+        svg {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

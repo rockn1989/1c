@@ -1,0 +1,157 @@
+<!-- begin header-desk -->
+<div id="header-boundry" class="header-desk">
+	<div class="uk-container">
+		<div class="header-desk__inner">
+			<a href="/" class="logo">
+				<span>виктория</span>
+			</a>
+
+			<div class="geo-list uk-visible@l">
+				<div class="geo-list__inner">
+					<div class="geo-list__city">Москва</div>
+					<div class="geo-list__phone">
+						<a href="tel:+74957862146">+7(495)789-21-46</a>
+					</div>
+				</div>
+				<div class="dropdown-menu" uk-dropdown="pos: bottom-justify; offset: -1; boundary: #header-boundry; boundary-align: true; delay-hide: 0;">
+					<div class="uk-container">
+						<div class="dropdown-menu__inner">
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-3">
+									<div class="dropdown-menu__item">
+										<div class="city-item">
+											<div class="city-item__name">Москва</div>
+											<a href="tel:+74957862146" class="city-item__phone">+7 (495) 786 21 46</a>
+										</div>
+									</div>
+								</div>
+								<div class="uk-width-1-3">
+									<div class="dropdown-menu__item">
+										<div class="city-item">
+											<div class="city-item__name">Санкт-Петербург</div>
+											<a href="tel:+78126444419" class="city-item__phone">+7 (812) 644 44 19</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="uk-width-1-3">
+									<div class="dropdown-menu__item">
+										<div class="city-type">
+											<div class="city-item__name">Самара</div>
+											<a href="tel:+78462334318" class="city-item__phone">+7 (846) 233 43 18</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="navbar">
+				<nav class="main-nav uk-visible@l">
+					<ul class="main-nav__list">
+						{% for index, link in mainNav %}
+							{% if index == 1 %}
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link">{{link}}</a>
+									<div class="dropdown-menu" uk-dropdown="pos: bottom-justify; offset: -1; boundary: #header-boundry; boundary-align: true; delay-hide: 0;">
+										<div class="uk-container">
+											<div class="dropdown-menu__inner">
+												<div class="uk-grid" uk-grid>
+													<div class="uk-width-1-3">
+														<div class="dropdown-menu__item">
+															<ul class="dropdown-menu__list">
+																<li>
+																	<a>Лицензии 1С:Предприятие 8</a>
+																</li>
+																<li>
+																	<a>1С:Бухгалтерия 8</a>
+																</li>
+																<li>
+																	<a>1С:Зарплата и Управление Персоналом 8</a>
+																</li>
+																<li>
+																	<a>1С:Управление Торговлей 8</a>
+																</li>
+																<li>
+																	<a>1С Комплексная Автоматизация 8</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="uk-width-1-3">
+														<div class="dropdown-menu__item">
+															<ul class="dropdown-menu__list">
+																<li>
+																	<a>Лицензии 1С:Предприятие 8</a>
+																</li>
+																<li>
+																	<a>1С:Бухгалтерия 8</a>
+																</li>
+																<li>
+																	<a>1С:Зарплата и Управление Персоналом 8</a>
+																</li>
+																<li>
+																	<a>1С:Управление Торговлей 8</a>
+																</li>
+																<li>
+																	<a>1С Комплексная Автоматизация 8</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="uk-width-1-3">
+														<div class="dropdown-menu__item">
+															<div class="title-h3">Перейди в облако.
+																<br>Это надежнее, быстрее и дешевле</div>
+
+															<div class="btn-wrapper">
+																<a href="" class="btn btn--yellow">15 дней бесплатно</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							{% else %}
+								<li class="main-nav__item">
+									<a href="" class="main-nav__link">{{link}}</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+
+				<div class="toolbar">
+					<div class="toolbar__search">
+						<a href="" role="button">
+							{{mixins.icon('20px','20px','search') }}
+						</a>
+					</div>
+					<div class="toolbar__email">
+						<a href="" role="button">
+							{{mixins.icon('20px','16px','mail') }}
+						</a>
+					</div>
+					<div class="toolbar__basket">
+						<a href="" role="button">
+							{{mixins.icon('20px','18px','cart') }}
+						</a>
+					</div>
+					<div class="toolbar__menu uk-hidden@l">
+						<a href="" role="button" uk-toggle="target: #offcanvas-menu">
+							{{mixins.icon('20px','21px','menu') }}
+						</a>
+					</div>
+				</div>
+			</div>
+
+			{% include "../components/offcanvas-menu.twig" %}
+		</div>
+	</div>
+</div>
+<!-- end header-desk -->

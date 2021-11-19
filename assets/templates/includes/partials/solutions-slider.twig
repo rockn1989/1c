@@ -1,0 +1,41 @@
+{% extends "../components/content-group.twig" %}
+{% set title = "Похожие решения" %}
+{% set modifyClass = " bgGray uk-margin-remove-bottom" %}
+
+{% block content %}
+	<div class="solutions-slider content-slider">
+		<div class="slider">
+			{% for slide in 0..2 %}
+
+				<div class="slide">
+					<div class="promo-card">
+						<div class="promo-card__title">
+							<a href="">Отчет по заказам для 1С:Комплексная автоматизация 8</a>
+						</div>
+						<div class="promo-card__subtitle">ООО «Московская Тепловая Компания»</div>
+						<div class="promo-card__desc">
+							<p>Внешний отчет «Отчет по заказам» для 1С:Комплексная автоматизация 8. Отчет выводит информацию по незакрытым (не оплачен/не отгружен полностью) заказам в разрезе контрагентов за период.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="promo-card">
+						<div class="promo-card__title">
+							<a href="">Разработка правил обмена между конфигурациями 1C</a>
+						</div>
+						<div class="promo-card__subtitle">ОАО «Сельэлектросетьстрой»</div>
+						<div class="promo-card__desc">
+							<ol>
+								<li>Разработка правил обмена между конфигурациями 1C: Управление торговлей 11 и 1С: Бухгалтерия предприятия 2.0.</li>
+								<li>Разработка внешнего отчета «Платежный календарь».</li>
+								<li>Доработка типового отчета «Анализ потребностей товара»</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

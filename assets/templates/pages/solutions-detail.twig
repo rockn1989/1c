@@ -1,0 +1,120 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Решение" %}
+{% set bread = ['Главная', 'Решение'] %}
+
+{% block content %}
+
+	<div class="gray-wrapper">
+		<div class="uk-container">
+			<h1>Решение</h1>
+			<div class="lead-text">
+				<span class='fill-yellow'>Автоматизация кадрового учета и расчета заработной платы</span>
+				на базе ПП
+				<br>
+				1С:Зарплата и управление персоналом 8» в компании ОАО «Сельэлектросетьстрой»
+			</div>
+		</div>
+	</div>
+
+
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Выполненные работы</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="list-top-underline uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Консультации по выбору программного обеспечения и вариантов его сопровождения
+							</div>
+						</li>
+
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Установка программного обеспечения на компьютеры заказчик
+							</div>
+						</li>
+
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Интеграция с другими системами на базе "1С:Предприятия"
+							</div>
+						</li>
+						<li class="list-top-underline__item-col uk-visible@m"></li>
+						<li class="list-top-underline__item-col uk-visible@m"></li>
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Продажа выбранных программных продуктов
+							</div>
+						</li>
+
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Создание интерфейсов и наборов прав пользователей
+							</div>
+						</li>
+
+						<li class="list-top-underline__item-col">
+							<div class="list-top-underline__item">
+								Доставка программных продуктов в офис заказчика
+							</div>
+						</li>
+					</ul>
+
+					<hr>
+
+					<div class="title-h3">Автоматизированы следующие функции</div>
+					<div class="small-title">Управление персоналом и кадровый учет (HRM)</div>
+
+					<ul>
+						<li>Кадровый учет</li>
+						<li>Расчет зарплаты</li>
+						<li>Регламентированная отчетность</li>
+						<li>Учет рабочего времени</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">ИТС</h2>
+				</div>
+				<div class="content-group__body">
+					<picture class="uk-text-center uk-margin-large-bottom">
+						<source srcset="img/media/itc-desk.png" media="(min-width: 768px)" type="image/png">
+						<source srcset="img/media/itc-mob.png" media="(min-width: 320px)" type="image/png">
+						<img src="img/media/itc-desk.png" alt="итс" loading="lazy">
+					</picture>
+
+					<ul class="list-left-underline uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Ежемесячно производятся работы по обновлению платформы и типовых конфигураций, диагностика состояния информационной базы, создание архивных копий</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Оформлено льготное сопровождение 1С:ИТС (на первые 3/6 месяцев с начала эксплуатации 1С:Предприятия версии ПРОФ)</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Осуществляется консультирование по техническим вопросам работы с программными продуктами "1С"</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Осуществляется консультирование по методическим вопросам работы с программой "1С"</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Производится обновление платформы и типовых конфигураций "1С:Предприятие", диагностика состояния информационной базы, создание архивных копий</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Оформлен платный договор 1С:ИТС</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "../includes/partials/solutions-slider.twig" %}
+{% endblock %}

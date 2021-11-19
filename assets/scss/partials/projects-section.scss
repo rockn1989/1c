@@ -1,0 +1,48 @@
+.projects-list {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: 80px;
+  }
+
+  &__col {
+    &.uk-grid-margin {
+      margin-top: 40px;
+      padding-top: 40px;
+
+      @media (min-width: $tablet-w) {
+        margin-top: 80px;
+        padding-top: 80px;
+      }
+    }
+
+    &.uk-first-column {
+      .project-card {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  .project-card__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .uk-grid-margin {
+    border-top: 1px solid $gray;
+  }
+
+  .project-card {
+    @media (min-width: $mob-s) {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 100%;
+      border-left: 1px solid $gray;
+    }
+  }
+}

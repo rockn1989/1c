@@ -1,0 +1,32 @@
+.soc-list {
+  @include list-reset();
+  display: flex;
+  font-size: 0;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      border: 1.5px solid;
+      border-radius: 50%;
+
+      svg {
+        color: inherit;
+      }
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.service-links {
+  .uk-grid-margin {
+    margin-top: 20px;
+  }
+}
+.service-link {
+  padding: 20px;
+  display: block;
+  height: 100%;
+  border: 1px solid $gray;
+  @media (min-width: $tablet-w) {
+    padding: 40px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    &:after {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    color: $black;
+  }
+}

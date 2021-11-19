@@ -1,0 +1,14 @@
+.promo-section {
+  padding: 48px 0 20px;
+  color: $white;
+  background-color: $darkBlue;
+
+  @media (min-width: $tablet-w) {
+    padding: 96px 0 20px;
+  }
+
+  .title-h2 {
+    margin-bottom: 40px;
+    color: $white;
+  }
+}

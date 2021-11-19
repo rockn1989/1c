@@ -1,0 +1,156 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Цены 1С" %}
+{% set bread = ['Главная', 'Цены 1С'] %}
+
+{% block content %}
+
+	<!-- begin prices-section -->
+	<section class="prices-section">
+		<div class="uk-container">
+			<h1>Цены 1С</h1>
+
+			<ul class="tab-top" uk-switcher>
+				<li>
+					<a href="#">Москва</a>
+				</li>
+				<li>
+					<a href="#">Санкт-Петербург</a>
+				</li>
+				<li>
+					<a href="#">Самара</a>
+				</li>
+			</ul>
+			<ul class="uk-switcher">
+				<li>
+					<ul class="uk-accordion" uk-accordion>
+						<li class="uk-open">
+							<a class="uk-accordion-title" href="#">Стоимость программных продуктов 1С</a>
+							<div class="uk-accordion-content">
+								<table class="price-table">
+									<thead>
+										<tr>
+											<th class="mobile-title">Продукт</th>
+											<th>Наименование продукта</th>
+											<th>Бесплатные часы специалиста</th>
+											<th>Стоимость</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>
+												<a href="" class="bold-text">1С:Бухгалтерия 8 ПРОФ</a>
+											</td>
+											<td data-content="Бесплатные часы специалиста" class="mobile-content">1</td>
+											<td>
+												<div class="price-product">
+													<div class="price-product__value">от 39 450 р.</div>
+													<div class="price-product__action">
+														<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+															{{ mixins.icon('36px', '36px', 'cart') }}
+														</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<a href="" class="bold-text">1С:Бухгалтерия 8. Комплект на 5 пользователей</a>
+											</td>
+											<td data-content="Бесплатные часы специалиста" class="mobile-content">2.5</td>
+											<td>
+												<div class="price-product">
+													<div class="price-product__value">от 65 750 р.</div>
+													<div class="price-product__action">
+														<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+															{{ mixins.icon('36px', '36px', 'cart') }}
+														</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<a href="" class="bold-text">1С:Бухгалтерия 8 КОРП</a>
+											</td>
+											<td data-content="Бесплатные часы специалиста" class="mobile-content">30</td>
+											<td>
+												<div class="price-product">
+													<div class="price-product__value">от 131 500 р.</div>
+													<div class="price-product__action">
+														<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+															{{ mixins.icon('36px', '36px', 'cart') }}
+														</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<a href="" class="bold-text">1С:Зарплата и управление персоналом 8</a>
+											</td>
+											<td data-content="Бесплатные часы специалиста" class="mobile-content">0</td>
+											<td>
+												<div class="price-product">
+													<div class="price-product__value">от 65 750 р.</div>
+													<div class="price-product__action">
+														<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+															{{ mixins.icon('36px', '36px', 'cart') }}
+														</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="gray-subtitle">
+									<sup>*</sup>*Льготная стоимость договора 1С:ИТС, действует при непрерывном продлении договора 1С:ИТС</div>
+								<a href="" class="btn">Заключить договор сопровождения 1С</a>
+							</div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Лицензия</a>
+							<div class="uk-accordion-content"></div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Стоимость договора сопровождения 1С</a>
+							<div class="uk-accordion-content"></div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Стоимость сопровождения отраслевых программных продуктов 1С</a>
+							<div class="uk-accordion-content"></div>
+						</li>
+					</ul>
+
+				</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+	</section>
+	<!-- end prices-section -->
+
+{% endblock %}
+
+{% block afterContentBlock %}
+
+	<!-- begin promo-section -->
+	<section class="promo-section">
+		<div class="uk-container">
+			<h2 class="title-h2">Остались вопросы? Мы перезвоним
+				<br>
+				и бесплатно проконсультируем!
+			</h2>
+
+			<a href="#callback-modal" class="btn btn--yellow" uk-toggle>Заказать обратный звонок</a>
+		</div>
+	</section>
+	<!-- end promo-section -->
+
+{% endblock %}

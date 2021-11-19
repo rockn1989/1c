@@ -1,0 +1,32 @@
+.solutions-slider {
+  .slider {
+    height: 530px;
+    @media (min-width: $tablet-w) {
+      height: 270px;
+    }
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .slick-track {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .slide {
+    margin: 0 10px;
+
+    @media (min-width: 768px) {
+      height: inherit;
+    }
+  }
+
+  .promo-card {
+    height: 100%;
+    @media (max-width: 767px) {
+      max-width: 276px;
+    }
+  }
+}

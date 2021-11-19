@@ -1,0 +1,39 @@
+{% extends "../components/content-group.twig" %}
+{% set title = "Другие проекты" %}
+
+{% block content %}
+	<!-- begin projects-slider -->
+	<div class="projects-slider content-slider">
+		<div class="slider">
+			{% for slide in 1..5 %}
+				<div class="slide">
+					<article class="project-card">
+						<header class="project-card__header">
+							<a href="" class="project-card__title">ООО «Аэро-Фуд Кейтеринг»</a>
+							<picture class="project-card__img">
+								<source srcset="img/media/webp/project-list-img-3.webp" type="image/webp">
+								<source srcset="img/media/project-list-img-3.jpg" type="image/jpg">
+								<img src="img/media/project-list-img-3.jpg" alt="" loading="lazy">
+							</picture>
+							<div class="project-card__fill-subtitle">
+								<span>1С: Комплексная Автоматизация 8</span>
+							</div>
+
+						</header>
+						<section class="project-card__body">
+							<div class="project-card__timework">
+								Длительность работ:
+								<span>12 месяцев</span>
+							</div>
+							<div class="project-card__desc">
+								ООО «Аэро-Фуд Кейтеринг» предоставляет сервисные услуги авиакомпаниям, занимается производством, разработкой рационов, обеспечивает доставку, загрузку бортового питания, а также, разгрузкой неиспользованного продукта для дальнейшей обработки.
+							</div>
+							<a href="" class="read-more">Подробнее</a>
+						</section>
+					</article>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!-- end projects-slider -->
+{% endblock %}

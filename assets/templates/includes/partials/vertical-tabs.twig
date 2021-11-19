@@ -1,0 +1,38 @@
+{% extends "../components/content-group.twig" %}
+{% set title = "7 простых шагов внедрения" %}
+{% set modifyClass = " bgGray" %}
+
+{% block content %}
+
+<div class="vertical-tabs">
+
+  <div class="uk-container">
+    <div class="uk-grid uk-grid-collapse">
+      <div class="uk-width-1-2@m">
+        <ul class="uk-tab-left custom-tab-left" uk-tab="connect: #steps-content">
+          <li class="uk-active"><a>Принять решение</a></li>
+          <li><a>Подписать договор</a></li>
+          <li><a>Пройти аудит</a></li>
+          <li><a>Утвердить список настроек системы</a></li>
+          <li><a>Проверить выполнение работы</a></li>
+          <li><a>Пройти обучение</a></li>
+          <li><a>Приступить к работе в настроенной системе</a></li>
+        </ul>
+      </div>
+      <div class="uk-width-1-2@m">
+        <ul id="steps-content" class="uk-switcher">
+          <li>
+            <div class="uk-cover-container uk-height-medium uk-margin-medium-bottom">
+              <img src="img/media/steps-img.png" alt="" uk-cover>
+            </div>
+            <p>
+              Примите решение автоматизировать документооборот в Вашей компании, пригласите нас для обсуждения деталей внедрения электронного документооборота и подготовки коммерческого предложения, с указанием стоимости работ и сроков реализации проекта.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

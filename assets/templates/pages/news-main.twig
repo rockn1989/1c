@@ -1,0 +1,204 @@
+{% extends "../layouts/default.twig" %}
+{% set title="Новости" %}
+{% set bread = ['О компании', 'Новости'] %}
+
+{% block content %}
+	<section class="news-section uk-margin-remove">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-5-6@m uk-flex-last uk-flex-first@m">
+					<h1 class="uk-visible@m">Новости</h1>
+
+					<div id="news-list" class="news-list uk-margin-large-bottom">
+						<div class="news-list__item-main">
+
+							<article class="post">
+								<div class="post__date">12 июня 2021</div>
+								<div class="post__title">
+									<a href="">Акция для пользователей базовых версий программ 1С</a>
+								</div>
+								<div class="post__text">Всем пользователям базовых версий программ 1С предлагается принять участие в акции по переходу в облачный сервис «1С:Фреш» на суперусловиях</div>
+							</article>
+						</div>
+						<div class="news-list__items">
+							{% for item in 1..2 %}
+								<div class="news-list__item">
+
+									<article class="post">
+										<div class="post__date">12 июня 2021</div>
+										<div class="post__title">
+											<a href="">Акция для пользователей базовых версий программ 1С</a>
+										</div>
+										<div class="post__text">Всем пользователям базовых версий программ 1С предлагается принять участие в акции по переходу в облачный сервис «1С:Фреш» на суперусловиях</div>
+									</article>
+								</div>
+
+								<div class="news-list__item">
+									<article class="post">
+										<div class="post__date">24 июня 2021</div>
+										<div class="post__title">
+											<a href="">Единый онлайн‑семинар «1С» для бухгалтеров и руководителей</a>
+										</div>
+										<div class="post__text">16 декабря 2020 года состоится Единый онлайн-семинар 1С для бухгалтеров и руководителей</div>
+									</article>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+
+					<a href="" class="btn btn--full-width uk-margin-large-bottom">Покаать еще</a>
+
+					{% include "../includes/components/pagination.twig" %}
+				</div>
+				<div class="uk-width-1-6@m">
+					<aside class="right-sidebar">
+						<div class="uk-visible@m">
+							<a href="" class="right-sidebar__title">Все новости</a>
+							<ul class="news-dates">
+								<li class="news-dates__item">
+									<div class="news-dates__year">
+										<a href="#" class="js__toggle-hidden-block">2021</a>
+									</div>
+									<div class="news-dates__months open hidden-block">
+										<div class="news-dates__month"></div>
+										<div class="news-dates__month">
+											<a href="#">Январь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Февраль</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Март</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Апрель</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Май</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июнь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июль</a>
+										</div>
+										<div class="news-dates__month">
+											<span>Август</span>
+										</div>
+										<div class="news-dates__month">
+											<span>Сентябрь</span>
+										</div>
+										<div class="news-dates__month">
+											<span>Октябрь</span>
+										</div>
+										<div class="news-dates__month">
+											<span>Ноябрь</span>
+										</div>
+										<div class="news-dates__month">
+											<span>Декабрь</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="news-dates__item">
+									<div class="news-dates__year">
+										<a href="#" class="js__toggle-hidden-block">2020</a>
+									</div>
+									<div class="news-dates__months hidden-block">
+										<div class="news-dates__month"></div>
+										<div class="news-dates__month">
+											<a href="#">Январь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Февраль</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Март</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Апрель</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Май</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июнь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июль</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Август</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Сентябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Октябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Ноябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Декабрь</a>
+										</div>
+									</div>
+								</li>
+
+								<li class="news-dates__item">
+									<div class="news-dates__year">
+										<a href="#" class="js__toggle-hidden-block">2019</a>
+									</div>
+									<div class="news-dates__months hidden-block">
+										<div class="news-dates__month"></div>
+										<div class="news-dates__month">
+											<a href="#">Январь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Февраль</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Март</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Апрель</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Май</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июнь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Июль</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Август</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Сентябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Октябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Ноябрь</a>
+										</div>
+										<div class="news-dates__month">
+											<a href="#">Декабрь</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="uk-hidden@m">
+							<div class="title-h1">Новости</div>
+							{% include "../includes/components/dropdown-panel.twig" %}
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

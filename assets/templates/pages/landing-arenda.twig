@@ -1,0 +1,875 @@
+{% extends "../layouts/sales-page.twig" %}
+{% set title="Заключите договор Аренды 1С" %}
+{% set bread = ['Услуги 1С', 'Заключите договор Аренды 1С'] %}
+
+{% block saleInfo %}
+	<div class="uk-grid uk-margin-large-top">
+		<div class="uk-width-5-6@m">
+			<h1 class="uk-margin-medium-bottom">Заключите договор Аренды 1С</h1>
+			<div class="sale-info__text">Это удобнее, надежней и дешевле</div>
+
+			<div class="horizontal-panel">
+				<a href="" class="btn btn--yellow" role="button">Попробовать 15 дней бесплатно</a>
+			</div>
+		</div>
+		<div class="uk-width-1-6@m uk-visible@m">
+			<ul class="vertical-anchors-links">
+				<li>
+					<a href="#tariffs" uk-scroll="offset: 70">Тарифы</a>
+				</li>
+				<li>
+					<a href="#advantages" uk-scroll="offset: 70">Преимущества</a>
+				</li>
+				<li>
+					<a href="#service" uk-scroll="offset: 70">Сервисы</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray uk-margin-remove-bottom">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="tariffs" class="title-h2">Тарифы на аренду 1С</h2>
+					<div class="content-group__subtitle">
+						<select class="custom-select js__custom-select">
+							<option value="month12">При оплате за 12 месяцев</option>
+							<option value="month6">При оплате за 6 месяцев</option>
+							<option value="month3">При оплате за 3 месяцев</option>
+							<option value="month1">При оплате за 1 месяц</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="content-group__body">
+					<div class="tariffs-list uk-child-width-1-3@m" uk-grid>
+						<div class="tariffs-list__row">
+							<div class="tariff-card">
+								<div class="tariff-card__header">
+									<div class="tariff-card__type">БАЗОВЫЙ</div>
+									<div class="tariff-card__value">
+										<span>5 Гб</span>
+										/ на диске</div>
+								</div>
+
+								<div class="tariff-card__body">
+									<ul>
+										<li>Веб-браузер, тонкий клиент</li>
+										<li>Неограниченное кол-во сопровождаемых типовых баз</li>
+										<li>Использование типовых и измененных конфигураций</li>
+										<li>Линия консультации по ведению учета, тех.поддержка 24/7</li>
+									</ul>
+								</div>
+								<div class="tariff-card__footer">
+									<div class="tariff-card__price">
+										<span class="tariff-card__price-value">от 950 р.</span>
+										/ в месяц
+									</div>
+									<a href="" class="btn btn--full-width">Выбрать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tariffs-list__row">
+							<div class="tariff-card">
+								<div class="tariff-card__header">
+									<div class="tariff-card__type">ПРОФЕССИОНАЛЬНЫЙ</div>
+									<div class="tariff-card__value">
+										<span>10 Гб</span>
+										/ на диске</div>
+									<div class="stocks">
+										<div class="stocks__hit">хит</div>
+									</div>
+								</div>
+
+								<div class="tariff-card__body">
+									<ul>
+										<li>Веб-браузер, тонкий клиент</li>
+										<li>Неограниченное кол-во сопровождаемых типовых баз</li>
+										<li>Использование типовых и измененных конфигураций</li>
+										<li>Линия консультации по ведению учета, тех.поддержка 24/7</li>
+										<li>Облачный диск для совместной работы сотрудников с общими файлами</li>
+									</ul>
+								</div>
+								<div class="tariff-card__footer">
+									<div class="tariff-card__price">
+										<span class="tariff-card__price-value">от  1 400 р.</span>
+										/ в месяц
+									</div>
+									<a href="" class="btn btn--full-width">Выбрать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tariffs-list__row">
+							<div class="tariff-card">
+								<div class="tariff-card__header">
+									<div class="tariff-card__type">БИЗНЕС</div>
+									<div class="tariff-card__value">
+										<span>15 Гб</span>
+										/ на диске</div>
+								</div>
+
+								<div class="tariff-card__body">
+									<ul>
+										<li>Веб-браузер, тонкий клиент</li>
+										<li>Неограниченное кол-во сопровождаемых типовых баз</li>
+										<li>Использование типовых и измененных конфигураций</li>
+										<li>Линия консультации по ведению учета, тех.поддержка 24/7</li>
+										<li>Облачный диск для совместной работы сотрудников с общими файлами</li>
+										<li>Сопровождение ККТ</li>
+									</ul>
+								</div>
+								<div class="tariff-card__footer">
+									<div class="tariff-card__price">
+										<span class="tariff-card__price-value">от  1 750 р.</span>
+										/ в месяц
+									</div>
+									<a href="" class="btn btn--full-width">Выбрать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray uk-margin-remove-bottom">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Для всех тарифов</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-margin-large-top" uk-grid>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-bottom"></span>
+							<p class="text-darkblue">Максимальное количество пользователей без ограничений</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-right-bottom"></span>
+							<p class="text-darkblue">Количество информационных баз без ограничений</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-top"></span>
+							<p class="text-darkblue">Возможность размещения как типовых так и нетиповых конфигураций</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-top"></span>
+							<p class="text-darkblue">Сопровождение типовых информационных баз без ограничений и дополнительной платы</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-bottom"></span>
+							<p class="text-darkblue">Линия консультации по техническим вопросам 24/7 количество консультаций не ограничено</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-right-bottom"></span>
+							<p class="text-darkblue">Возможность подключения сервисов 1С:ИТС</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	{% include "../includes/components/tariff-calc.twig" %}
+
+	<!-- begin content-group -->
+	<section class="content-group uk-padding uk-padding-remove-horizontal">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2>Облако 1С:Аренда</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="grid-divider-large uk-grid-collapse uk-margin-medium-bottom uk-child-width-1-3@m" uk-grid>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle uk-margin-medium-bottom ">
+									<img src="img/media/router.svg" width="77" height="67" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h3 uk-margin-remove-bottom">Удобнее</div>
+								</div>
+								<ul>
+									<li>Пользуйтесь 1С где угодно и когда угодно</li>
+									<li>Подключитесь к 1С-Аренда в течение нескольких минут</li>
+									<li>Получайте ответы на вопросы по работе с 1С быстро и в любое время</li>
+									<li>Управляйте услугами и общайтесь с поддержкой через личный кабинет</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle uk-margin-medium-bottom ">
+									<img src="img/media/shield.svg" width="52" height="63" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h3 uk-margin-remove-bottom">Надежнее</div>
+								</div>
+								<ul>
+									<li>Серверы размещены в надежном Дата-центре</li>
+									<li>Доступен бэкап на любой день за последний месяц</li>
+									<li>Информационные базы всегда с актуальными релизами</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle uk-margin-medium-bottom ">
+									<img src="img/media/procent-down.svg" width="72" height="67" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h3 uk-margin-remove-bottom">Дешевле</div>
+								</div>
+								<ul>
+									<li>Платите только за необходимое количество услуг</li>
+									<li>Экономьте на сервере, лицензиях и администрировании</li>
+									<li>Лицензионное использование 1С без заключения дополнительных договоров</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<a href="" class="btn btn--yellow">Попробовать 15 дней бесплатно</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="advantages">Аренда 1С дешевле содержания
+						<br>собственного сервера</h2>
+				</div>
+				<div class="content-group__body">
+					<blockquote class="uk-margin-large-bottom">
+						<picture>
+							<img src="img/media/hill.svg" width="180" height="90" alt="" loading="lazy">
+						</picture>
+						<div class="text">
+							Многие молодые предприниматели даже не рассматривают альтернативы для
+							<span class="fill-yellow">1С в облаке</span>, существующий бизнес продолжает использовать локальные версии 1С зачастую по инерции!
+						</div>
+					</blockquote>
+
+					<div class="lead-text">
+						Сравним расходы на покупку и использование 1С на своем сервере и стоимость договора 1С:Аренды для 5-ти пользователей.
+					</div>
+
+					<div class="cloud-price-tables">
+						<div class="uk-grid uk-grid-collapse">
+							<div class="uk-width-2-3@m">
+								<div class="cloud-price-table cloud-price-table--bg-gray">
+									<div class="cloud-price-table__title">СВОЙ СЕРВЕР</div>
+									<div class="cloud-price-table__body">
+										<div class="grid-divider-medium uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+											<div class="grid-divider-medium__row">
+												<div class="grid-divider-medium__col">
+													<div class="cloud-price-table__small-title">Единоразовые расходы</div>
+													<div class="cloud-price-table__coast">100 000 — 300 000 р.
+														<sup>*</sup>
+													</div>
+													<ul class="cloud-price-table__list">
+														<li>Покупка сервера</li>
+														<li>Лицензии Windows Server</li>
+														<li>1С Бухгалтерия, 5 пользователей</li>
+														<li>Настройка сервера</li>
+														<li>Настройка удаленного доступа</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="grid-divider-medium__row">
+												<div class="grid-divider-medium__col">
+													<div class="cloud-price-table__small-title">Ежемесячные расходы</div>
+													<div class="cloud-price-table__coast">9 000 р.
+														<sup>*</sup>
+													</div>
+													<ul class="cloud-price-table__list">
+														<li>Обновление ИТС</li>
+														<li>Администрирование сервера</li>
+														<li>Upgrade сервера</li>
+														<li>Аренда безопасного места под бэкапы</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cloud-price-table__footer">
+										<div class="gray-subtitle">* Статистика по нашим клиентам</div>
+									</div>
+								</div>
+							</div>
+							<div class="uk-width-1-3@m">
+								<div class="cloud-price-table">
+									<div class="cloud-price-table__title">1С В ОБЛАКЕ</div>
+									<div class="cloud-price-table__body">
+										<div class="cloud-price-table__small-title">Аренда 1С 5 пользователей</div>
+										<div class="cloud-price-table__coast cloud-price-table__coast--fill">3 500 р.</div>
+										<div class="cloud-price-table__text">
+											Наши клиенты при переносте баз в облако в среднем снижают свои ежемесячные расходы больше чем в два раза
+										</div>
+									</div>
+									<div class="cloud-price-table__footer">
+										<a href="" class="btn btn--yellow">Попробовать 15 дней бесплатно</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2>Аренда выгоднее и надежнее своего сервера</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="compare-table">
+						<div class="compare-table__header uk-visible@s">
+							<div class="uk-grid uk-grid-collapse">
+								<div class="uk-width-1-3">
+									<div class="compare-table__td"></div>
+								</div>
+								<div class="uk-width-1-3">
+									<div class="compare-table__td">
+										<div class="compare-table__title">Свой сервер</div>
+									</div>
+								</div>
+								<div class="uk-width-1-3">
+									<div class="compare-table__td">
+										<div class="compare-table__title">1С:Аренда</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="compare-table__body">
+							<div class="uk-grid uk-grid-collapse">
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td bold">Скорость и стабильность работы 1С</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">Свой сервер</div>
+										<div class="minus">Для стабильной работы требуется хороший сервер и грамотный системный администратор</div>
+									</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">1С:Аренда</div>
+										<div class="plus">
+											Стабильность работы 1С обеспечивается дорогими серверами, размещенными в надежных дата-центрах и командой опытных администраторов
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="uk-grid uk-grid-collapse">
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td bold">Резервное копирование</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">Свой сервер</div>
+										<div class="minus">Для автоматического резервного копирования требуется настройка специальных сервисов, требуется постоянный контроль за работой сервисов</div>
+									</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">1С:Аренда</div>
+										<div class="plus">
+											Резервное копирование выполняется ежедневно. Резерные копии доступны на любую дату за последний месяц. Выполнением бэкапов контролируется автоматически и вручную администраторами.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="uk-grid uk-grid-collapse">
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td bold">Защита от вирусов</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">Свой сервер</div>
+										<div class="minus">Локальные информационные базы могут быть уничтожены вирусами-шифровальщиками. Правильная настройка антивирусов требует контроля со стороны опытного системного администратора
+										</div>
+									</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">1С:Аренда</div>
+										<div class="plus">
+											Серверы в дата-центре надежно защищены от вирусов и попыток несанкционированного доступа к данным. Настройкой и контролем за серверами занимается команда опытных системных администраторов
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="uk-grid uk-grid-collapse">
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td bold">Обновление информационных баз</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">Свой сервер</div>
+										<div class="minus">Для обновления релизов требуется заключение договора 1С:ИТС, когда выполняется обновление, требуется перерыв в работе пользователей</div>
+									</div>
+								</div>
+								<div class="uk-width-1-1 uk-width-1-3@s">
+									<div class="compare-table__td">
+										<div class="mobile-title uk-hidden@s">1С:Аренда</div>
+										<div class="plus">
+											Лицензионное сопровождение 1С уже включено в тарифы 1С:Аренды, обновление выполняется в ночное время, когда с информационными базами никто не работает
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<a href="" class="btn btn--yellow" role="button">Попробовать 15 дней бесплатно</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header"></div>
+				<div class="content-group__body">
+					<div class="grid-divider-large uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="division">
+									<div class="division__img">
+										<img src="img/media/manager.svg" width="179" height="168" alt="Что выигрывает директор" loading="lazy">
+									</div>
+									<div class="division__role">Что выигрывает директор</div>
+									<div class="division__text">
+										<ul>
+											<li>Снижение затрат на IT структуру</li>
+											<li>Сохранность баз данных компании</li>
+											<li>Защита от коллизий в офисе</li>
+											<li>Отсутствие затрат на покупку доп. лицензий 1C и договор 1С:ИТС</li>
+											<li>Если у Вас уволился системный администратор — сотрудники продолжают спокойно работать.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="division">
+									<div class="division__img">
+										<img src="img/media/financier.svg" width="170" height="174" alt="Что выигрывает бухгалтер" loading="lazy">
+									</div>
+									<div class="division__role">Что выигрывает бухгалтер</div>
+									<div class="division__text">
+										<ul>
+											<li>Всегда актуальные релизы программ 1C</li>
+											<li>Доступ к программам 1C из дома и в командировке</li>
+											<li>Восстановление баз данных 1C при критической ошибке</li>
+											<li>Бесплатная консультация 1C и техподдержка 24/7</li>
+											<li>Отчетность прямо из 1С. Всегда в срок и без стресса</li>
+											<li>Ведение нескольких информационных баз на одном аккаунте одновременно</li>
+											<li>Возможность доработки конфигураций</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Заблуждения и страхи по переносу 1С в облако</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="delusion-list">
+						<div class="uk-child-width-1-2@s uk-grid uk-flex-top uk-flex-wrap-top" uk-grid="masonry: true">
+
+							<div class="wrapper">
+								<div class="delusion-item">
+									<div class="delusion-item__title">
+										<div class="delusion-item__counter">1</div>Мои базы уже как бы и не мои, боюсь потерять базу
+									</div>
+									<div class="delusion-item__text">
+										Наоборот. Риск потерять базу на вашем сервере гораздо выше. Насколько вы уверены, что ваш сисадмин организовал правильный ежедневный бекап? За какое время вы можете получить копию базы на три дня назад?
+									</div>
+								</div>
+							</div>
+
+							<div class="wrapper">
+								<div class="delusion-item">
+									<div class="delusion-item__title">
+										<div class="delusion-item__counter">2</div>Если сервер упадет, я ничего не смогу сделать, чтобы восстановить его.
+									</div>
+									<div class="delusion-item__text">
+										У нас сервера в дата центрах, триер III, доступность 99,4% горячая замена и прочее. Обеспечить такие же условия собственному серверу очень дорого, поэтому вероятность, что он сломается выше. Если у нас упадет диск - Вы даже не заметите падения скорости из-за автоматического подключения резервного диска. А если сгорит блок питания на Вашем сервере - сколько времени уйдет на замену? А если сегодня сдавать отчетность?
+									</div>
+								</div>
+							</div>
+
+							<div class="wrapper">
+								<div class="delusion-item">
+									<div class="delusion-item__title">
+										<div class="delusion-item__counter">3</div>У меня нетиповая конфигурация и автоматические обновления не работают
+									</div>
+									<div class="delusion-item__text">
+										Мы обновляем и нетиповые конфигурации, обновление выполняются в ночное время, когда Вы не работаете с программой.
+									</div>
+								</div>
+							</div>
+
+							<div class="wrapper">
+								<div class="delusion-item">
+									<div class="delusion-item__title">
+										<div class="delusion-item__counter">4</div>У меня 1С интегрирован с сайтом, ЕГАИС, торговым оборудованием, это не будет работать в облаке
+									</div>
+									<div class="delusion-item__text">
+										Никаких  проблем с интеграциями 1С в облаке нет. Наши клиенты успешно пользуются интеграцией с торговым оборудованием и любыми ГИСами.
+									</div>
+								</div>
+							</div>
+
+							<div class="wrapper">
+								<div class="delusion-item">
+									<div class="delusion-item__title">
+										<div class="delusion-item__counter">5</div>Я сдаю отчетность из 1С
+									</div>
+									<div class="delusion-item__text">
+										Сервис 1С-Отчетность можно подключить и на сервере 1С:Аренда
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="service" class="title-h2">Пользуйтесь удобными сервисами,
+						<br>чтобы облегчить работу</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="service-links uk-margin-medium-bottom">
+						<div class="uk-child-width-1-2@s  uk-child-width-1-3@m uk-grid" uk-grid>
+							<div>
+								<a href="" class="service-link">
+									<span class="service-link__title icon-chevron-right">1С:Контрагент</span>
+									<span class="service-link__text">Автоматическое заполнение реквизитов и проверка контрагентов</span>
+								</a>
+							</div>
+							<div>
+								<a href="" class="service-link">
+									<span class="service-link__title icon-chevron-right">1С-Отчетность</span>
+									<span class="service-link__text">Предоставление отчетности ФНС, ПФР, ФСС, Росстат и т.д. через интернет прямо из программы 1С</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="" class="service-link">
+									<span class="service-link__title icon-chevron-right">1СПАРК Риски</span>
+									<span class="service-link__text">Доступ к информационно-аналитической системе СПАРК</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="" class="service-link">
+									<span class="service-link__title icon-chevron-right">1С-ОФД</span>
+									<span class="service-link__text">Подключение касс к обмену с ФНС в соотвествии с 54-ФЗ</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="" class="service-link">
+									<span class="service-link__title icon-chevron-right">1С-ЭДО</span>
+									<span class="service-link__text">Отправка электронных юридически значимых документов прямо из 1С</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<a href="" class="btn btn--yellow">Попробовать 15 дней бесплатно</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Кому аренда 1С подходит особенно хорошо</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="grid-divider-large uk-child-width-1-3@m" uk-grid uk-height-match=".uk-flex">
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/flower.svg" width="42" height="78" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">Молодым компаниям</div>
+								</div>
+
+								<div class="uk-margin-small-top">
+									Нет начальных затрат на покупку 1С. Быстрый старт. Управление доступно напрямую из личного кабинета.
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/spray.svg" width="96" height="96" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">Компаниям с филиальной сетью</div>
+								</div>
+
+								<div class="uk-margin-small-top">Удобный инструмент для совместной работы территориально удаленных сотрудников. Виртуальный офис для работы с программой 1С и другими файлами. Легко масштабируется.</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/pig.svg" width="80" height="85" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">В условиях ограниченного бюджета</div>
+								</div>
+								<div class="uk-margin-small-top">
+									Небольшой ежемесячный платеж. Есть возможность приостановить Аренду 1С в случае прекращения деятельности.
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/torg-company.svg" width="75" height="53" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">Для торговых компаний</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/aud-company.svg" width="57" height="66" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">Для аудиторских компаний</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="uk-flex uk-flex-middle">
+									<img src="img/media/buh.svg" width="73" height="72" class="uk-margin-medium-right" alt="" loading="lazy">
+									<div class="title-h4 uk-margin-remove-bottom">Для бухгалтеров</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray uk-margin-remove-bottom">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2 uk-margin-medium-bottom">Вопросы и ответы</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="uk-accordion uk-accordion--white" uk-accordion>
+						<li class="uk-open">
+							<a class="uk-accordion-title" href="#">Могу ли я получать круглосуточную техническую поддержку?</a>
+							<div class="uk-accordion-content">
+								<p>В программе реализована отправка на печать нескольких однотипных документов. Для этого необходимо в списке документов выделить те, которые требуется распечатать и нажать кнопку «Печать». Выделить можно как весь список, так и отдельные документы в списке по средствам сочетания CTRL, CTRL+A (выделить все документы)</p>
+							</div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Могу размещать в сервисе 1С Аренда измененные конфигурации? В каких тарифах? как будут такие информационные базы сопровождаться?</a>
+							<div class="uk-accordion-content">
+								<p>В программе реализована отправка на печать нескольких однотипных документов. Для этого необходимо в списке документов выделить те, которые требуется распечатать и нажать кнопку «Печать». Выделить можно как весь список, так и отдельные документы в списке по средствам сочетания CTRL, CTRL+A (выделить все документы)</p>
+							</div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Где размещены серверы, соблюдается ли закон о размещении персональных данныхна территории РФ</a>
+							<div class="uk-accordion-content">
+								<p>В программе реализована отправка на печать нескольких однотипных документов. Для этого необходимо в списке документов выделить те, которые требуется распечатать и нажать кнопку «Печать». Выделить можно как весь список, так и отдельные документы в списке по средствам сочетания CTRL, CTRL+A (выделить все документы)</p>
+							</div>
+						</li>
+
+						<li>
+							<a class="uk-accordion-title" href="#">Не нарушаются ли при использовании 1С в облаке права правообладателя?</a>
+							<div class="uk-accordion-content">
+								<p>В программе реализована отправка на печать нескольких однотипных документов. Для этого необходимо в списке документов выделить те, которые требуется распечатать и нажать кнопку «Печать». Выделить можно как весь список, так и отдельные документы в списке по средствам сочетания CTRL, CTRL+A (выделить все документы)</p>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray ">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Отзывы по Аренде 1С</h2>
+				</div>
+				<div
+					class="content-group__body">
+					<!-- begin reviews-slider -->
+					<div class="reviews-slider content-slider">
+						<div class="slider">
+							{% for item in 1..3 %}
+								<div class="slide">
+									<div class="review-card" uk-lightbox="{group: reviews}">
+										<div class="review-card__img">
+											<a href="img/media/review-1.png">
+												<img src="img/media/review-1.png" alt="" loading="lazy">
+											</a>
+										</div>
+
+										<div class="review-card__desc">
+											<div class="review-card__title">ООО "ОСНОВА"</div>
+											<div class="review-card__text">ООО "ОСНОВА" выражает благодарность специалистам ООО "1С:Франчайзи Виктория" за доброжелательность и высокий профессионализм в работе, за быстродействие ...</div>
+											<div class="small-title">Использованные
+												<br>
+												программные продукты:</div>
+											<ul class="products-list">
+												<li>
+													<a href="">1С CRM</a>
+												</li>
+												<li>
+													<a href="">1С Упрощенка 8</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					<!-- end reviews-slider -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Отзывы по Аренде 1С</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="progress-list uk-child-width-1-3@m" uk-grid>
+						<li class="progress-list__col">
+							<div class="progress-list__item">
+								<div class="progress-list__img">
+									<img src="img/media/pazl.svg" width="75" height="67" alt="" loading="lazy">
+								</div>
+								<div class="progress-list__text">Наши программисты могут реализовать доработки баз любой сложности. У нас есть опыт реализации крупных и сложных проектов</div>
+							</div>
+						</li>
+
+						<li class="progress-list__col">
+							<div class="progress-list__item">
+								<div class="progress-list__img">
+									<img src="img/media/realty.svg" width="75" height="41" alt="" loading="lazy">
+								</div>
+								<div class="progress-list__text">Индивидуальные условия. Мы готовы подстраивать тарифы под ваши потребности</div>
+							</div>
+						</li>
+
+						<li class="progress-list__col">
+							<div class="progress-list__item">
+								<div class="progress-list__img">
+									<img src="img/media/secretary.svg" width="68" height="68" alt="" loading="lazy">
+								</div>
+								<div class="progress-list__text">Бесплатная линия консультации по настройкам и использованию 1С</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+{% endblock %}
+{% block afterContent %}
+
+	<!-- begin promo-section -->
+	<section class="promo-section">
+		<div class="uk-container">
+			<h2 class="title-h2">Попробуйте 15 дней бесплатно!
+			</h2>
+
+			<a href="#callback-modal" class="btn btn--yellow" uk-toggle>Оставить заявку</a>
+		</div>
+	</section>
+	<!-- end promo-section -->
+{% endblock %}

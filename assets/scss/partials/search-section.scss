@@ -1,0 +1,28 @@
+.search-result {
+  &__item {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $gray;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-w) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__item-text {
+  }
+}

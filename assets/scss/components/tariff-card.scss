@@ -1,0 +1,95 @@
+.tariffs-list {
+  margin-top: 30px;
+
+  @media (min-width: $mob-s) {
+    margin-top: 0;
+  }
+}
+
+.tariff-card {
+  position: relative;
+  padding: 20px 20px 200px 20px;
+  height: 100%;
+  background-color: $white;
+
+  @media (min-width: $tablet-w) {
+    padding: 40px 40px 200px 40px;
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 30px;
+    padding-right: 45px;
+    .stocks {
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+  }
+
+  &__type {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    color: $blue;
+    word-break: break-word;
+  }
+
+  &__value {
+    padding: 2px 5px;
+    color: $white;
+    background-color: $blue;
+    display: inline-flex;
+    align-items: center;
+    span {
+      padding-right: 3px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 30px;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+  }
+  &__price-value {
+    padding-right: 4px;
+    font-size: 30px;
+    line-height: 30px;
+    color: $black;
+
+    @media (min-width: $mob-s) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    @media (min-width: $tablet-w) {
+      bottom: 40px;
+      left: 40px;
+      right: 40px;
+    }
+  }
+}
+
+.stocks {
+  & > div {
+    padding: 0 4px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__hit {
+    color: $blue;
+    background-color: $yellow;
+  }
+}

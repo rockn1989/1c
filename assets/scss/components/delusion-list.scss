@@ -1,0 +1,71 @@
+.delusion-list {
+  .uk-grid-margin {
+    margin-top: 20px;
+  }
+
+  &--medium {
+    .delusion-item {
+      @media (min-width: $tablet-w) {
+        padding: 20px;
+      }
+    }
+    .delusion-item__title {
+      align-items: center;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .delusion-item__text {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
+
+.delusion-item {
+  padding: 20px;
+  height: 100%;
+  background-color: $white;
+
+  @media (min-width: $tablet-w) {
+    padding: 40px;
+  }
+
+  & > div {
+    counter-reset: item;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 28px;
+    @media (min-width: $tablet-w) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &__counter {
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background-color: $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__text {
+    @media (min-width: $tablet-w) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

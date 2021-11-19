@@ -1,0 +1,39 @@
+.reviews-detail {
+  padding-bottom: 48px;
+  @media (min-width: $tablet-w) {
+    padding-bottom: 96px;
+  }
+}
+
+.reviews-list {
+  @include list-reset();
+  margin-bottom: 0 !important;
+  &__row {
+    list-style: none;
+    &:last-child {
+      margin-bottom: 0 !important;
+      border: none;
+    }
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: 80px !important;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &__item {
+    @media (min-width: $tablet-w) {
+      padding-bottom: 80px;
+    }
+  }
+
+  .uk-grid {
+    & > div {
+      margin-bottom: 48px;
+
+      @media (min-width: $tablet-w) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

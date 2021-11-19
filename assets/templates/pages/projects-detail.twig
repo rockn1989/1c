@@ -1,0 +1,85 @@
+{% extends "../layouts/default.twig" %}
+{% set title="ФБ Инноваций и развития" %}
+{% set bread = ['Внедрение 1С', 'Наши проекты', 'ФБ Инноваций и развития'] %}
+
+{% block content %}
+
+	<div class="gray-wrapper">
+		<div class="uk-container">
+			<h1>ФБ Инноваций и развития</h1>
+			<p>
+				<span class="fill-full-yellow">1С: Комплексная Автоматизация 8</span>
+			</p>
+			<p>Длительность работ: 6 месяцев</p>
+			<div class="lead-text">
+				Наша компания
+				<span class="fill-yellow">успешно выполнила большое количество проектов</span>
+				в различных областях. Описания наиболее интересных проектов мы размещаем на этой странице, а также публикуем на сайте 1С в специально отведенном разделе «Внедренные решения».
+			</div>
+		</div>
+	</div>
+
+
+	<div class="targets">
+		<div class="uk-container">
+			<div class="uk-grid uk-grid-collapse">
+				<div class="uk-width-1-2@s">
+					<div class="targets__item">
+						<div class="targets__title">Заказчик</div>
+						<div class="targets__text">
+							Акционерный Коммерческий Федеральный Банк Инноваций и Развития оказывает полный комплекс банковских услуг, отвечающих требованиям современного уровня банковского сервиса. Основан в 1994 году, предоставляет банковские услуги физическим и юридическим лицам. Компания является одним из крупнейших банков на рынке.
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-2@s">
+					<div class="targets__item">
+						<div class="targets__title">Задача</div>
+						<div class="targets__text">
+							Целью внедрения является организация единого информационного пространства, автоматизация работы сотрудников Банка, получение оперативного доступа к информации для повышения эффективности труда сотрудников, использующих программу 1С.
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-1">
+					<div class="targets__item">
+						<div class="targets__title">Результат</div>
+						<div class="targets__text">
+							В ходе проекта специалисты 1С: Франчайзи Виктория установили и настроили систему. Была автоматизирована работа отдела кадров. Регламентированная и управленческая отчетность формируется быстрее, достоверность данных возросла, трудозатраты сотрудников значительно снизились. Внедрение было завершено в установленные сроки, без превышения запланированного бюджета.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">В результате внедрения успешно
+						<br>
+						решены задачи</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="list-left-underline uk-child-width-1-3@m" uk-grid>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Автоматизирован учет имущества банка – основные средства и малоценное имущество. Произведена загрузка из разрозненных источников необходимых данных, выполнены необходимые доработки (автоматизация переоценки, учет материалов в эксплуатации по стоимости и прочее);</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Внедрен блок расходов будущих периодов. Выполнены доработки типовой конфигурации, касающиеся как алгоритма расчета будущих периодов, так и особенностей списания НДС из расходов, автоматизировано создание распоряжений на списание;</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Выполнены работы по прочим участкам АХД, в т.ч. учет взаиморасчетов с поставщиками и автоматическое начисление регулярных услуг;</div>
+						</li>
+					</ul>
+
+					<a href="" class="btn btn--full-width uk-margin-large-top">Показать еще</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	{% include "../includes/partials/projects-slider.twig" %}
+
+{% endblock %}

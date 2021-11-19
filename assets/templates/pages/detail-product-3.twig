@@ -1,0 +1,507 @@
+{% extends "../layouts/sales-page.twig" %}
+{% set title="1С:Управление Торговлей" %}
+{% set idSection="id='products'" %}
+{% set bread = ['Купить 1С', '1С:Управление Торговлей'] %}
+
+{% block saleInfo %}
+	<div class="uk-grid">
+		<div class="uk-width-5-6@m">
+			<h1>1С:Управление Торговлей</h1>
+			<div class="sale-info__text">
+				<p>«1С:Управление Торговлей 8» (УТ) – это лучший программный инструмент для повышения эффективности торговых предприятий.</p>
+
+				<p>Фирма «1С», как всегда, предоставила пользователям тот программный продукт, который не только повышает эффективность работы компании, но и значительно увеличивает прибыль организации любого типа!</p>
+			</div>
+
+			<div class="horizontal-panel">
+				<a href="" class="btn btn--md btn--yellow" role="button">Все предложения</a>
+				<a href="" class="btn btn--md btn--white" role="button">Заказать демонстрацию</a>
+				<div class="text-price">от 39 450 р.</div>
+			</div>
+		</div>
+		<div class="uk-width-1-6@m uk-visible@m">
+			<ul class="vertical-anchors-links">
+				<li>
+					<a href="#results" uk-scroll="offset: 70">Что получите</a>
+				</li>
+				<li>
+					<a href="#products" uk-scroll="offset: 70">Продукты</a>
+				</li>
+				<li>
+					<a href="#auto" uk-scroll="offset: 70">Автоматизация</a>
+				</li>
+				<li>
+					<a href="#advantages" uk-scroll="offset: 70">Преимущества</a>
+				</li>
+				<li>
+					<a href="#solutions" uk-scroll="offset: 70">Решения</a>
+				</li>
+				<li>
+					<a href="#add-info" uk-scroll="offset: 70">Допматериалы</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+
+	<section class="progress-section">
+
+		<div class="uk-container">
+			<ul class="progress-list uk-child-width-1-3@m" uk-grid>
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/pazl.svg" width="75" height="67" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Установка и обучение</div>
+					</div>
+				</li>
+
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/1c-icon.svg" width="81" height="44" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Бесплатная поддержка
+							<br>
+							и обновление</div>
+					</div>
+				</li>
+
+				<li class="progress-list__col">
+					<div class="progress-list__item">
+						<div class="progress-list__img">
+							<img src="img/media/rocket.svg" width="53" height="71" alt="" loading="lazy">
+						</div>
+						<div class="progress-list__text">Оперативные консультации</div>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+
+	</section>
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="results" class="title-h2">Вы получите</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="three-divider-columns uk-child-width-1-3@m" uk-grid>
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">1С-Отчетность</div>
+								<p>1С-Отчетность — дополнительный сервис для клиентов "1С:Франчайзи Виктория", позволяющий максимально упростить взаимоотношения наших клиентов с проверяющими структурами.</p>
+							</div>
+						</div>
+
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">Обучение</div>
+								<p>Обучение сотрудников Вашей компании базовым навыкам работы с системой.</p>
+							</div>
+						</div>
+
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">Обновления</div>
+								<p>В стоимость программы 1С включены бесплатная поддержка и обновление баз данных. Вы сможете оценить качество работы специалистов компании "1С:Франчайзи Виктория"</p>
+							</div>
+						</div>
+
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">Установка</div>
+								<p>Наши сертифицированные специалисты произведут установку системы даже поверх более ранних версий без потери базы данных. Стандартная установка 1C занимает не более одного часа на каждые пять рабочих мест. Ваши работники смогут быстро приступить к освоению установленного продукта.</p>
+							</div>
+						</div>
+
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">Бесплатные часы</div>
+								<p>Если Вы решили купить 1С у нас, то вместе с программой вы получаете бесплатные часы работы наших специалистов в объеме, указанном в прайс-листе.</p>
+							</div>
+						</div>
+
+						<div class="three-divider-columns__col">
+							<div class="three-divider-columns__item">
+								<div class="title-h4">Консультации</div>
+								<p>Компания "1С:Франчайзи Виктория" предоставляет своим клиентам возможность получать доступную, оперативную и квалифицированную консультацию практически по всем вопросам, касающимся работы с программными продуктами 1С.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	{% include "../includes/partials/products-slider.twig" with {'id': idSection} %}
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="auto" class="title-h2">Благодаря «1С:Управление торговлей 8 (редакция 11)» можно автоматизировать следующие направления:</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="list-left-underline uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid" uk-grid>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление запасами</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление отношениями с клиентами (CRM)</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление закупками</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление правилами продаж</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление доставкой товаров</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление процессами продаж</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление финансами</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Управление складом</div>
+						</li>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">Анализ и контроль целевых показателей деятельности организации
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__body">
+					<div class="lead-text">
+						В программе «1С:Управление Торговлей 8»
+						<span class="fill-yellow">можно производить любые виды
+							<br>
+							торговых операций,</span>
+						при этом не только совершенных, но еще и планируемых.
+					</div>
+
+					<div class="grid-divider-large uk-child-width-1-2@s uk-margin-large-bottom" uk-grid>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<div class="lead-text uk-margin-remove">
+									Благодаря настроенной автоматизации, вам больше не нужно вручную сортировать или распределять первичные документы складского и торгового учета, программа все сделает за вас!
+								</div>
+							</div>
+						</div>
+						<div class="grid-divider-large__row">
+							<div class="grid-divider-large__col">
+								<p>При этом функционал программы можно настраивать под нужды каждой отдельной организации.</p>
+
+								<p>Например, небольшой компании хватит базовых функций, а вот крупное предприятие по достоинству оценит количество возможностей.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="uk-container-cover uk-height-medium uk-margin-large-bottom">
+						<picture>
+							<source srcset="img/media/content-img-2.png" media="(min-width: 768px)" type="image/png">
+							<source srcset="img/media/content-img-2-mob.png" media="(min-width: 320px)" type="image/png">
+							<img src="img/media/content-img-2-mob.png" alt="" uk-cover loading="lazy">
+						</picture>
+					</div>
+
+					<div class="lead-text">
+						<span class="fill-yellow">Благодаря автоматическому подбору данных,</span>
+						программу «1С:Управление
+						<br>
+						Торговлей 8»
+						<span class="fill-yellow">можно объединить</span>
+						с «1С:Бухгалтерия 8», а также использовать в качестве управляющей системы для конфигурации «1С:Розница 8».
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray uk-margin-remove-bottom">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="advantages" class="title-h2">Купив «1С:Управление торговлей 8 (редакция 11)» каждый отдел ощутит преимущества работы с программой</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-margin-large-top uk-grid" uk-grid>
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-right-bottom"></span>
+							<p class="text-darkblue">Отдел продаж сможет меньше времени тратить на составление отчетов, а больше общаться с клиентами и заниматься, непосредственно, продажами.</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-top"></span>
+							<p class="text-darkblue">Склад снизит показатель недостачи и пересорта, а также повысит оперативность работы доставки.</p>
+						</div>
+
+						<div class="uk-grid__col uk-visible@m"></div>
+
+						<div class="uk-grid__col uk-visible@m"></div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-right-top"></span>
+							<p class="text-darkblue">Отдел закупок сможет полностью контролировать взаимодействие с поставщиками.</p>
+						</div>
+
+						<div class="uk-grid__col">
+							<span class="triangle triangle--pos-left-bottom"></span>
+							<p class="text-darkblue">Руководитель компании будет оперативно получать всю информацию о работе компании в целом и каждого подразделения в частности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group bgGray">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="solutions" class="title-h2">Внедренные решения</h2>
+				</div>
+				<div class="content-group__body">
+					<div class="solutions-slider content-slider">
+						<div class="slider">
+							{% for slide in 0..2 %}
+
+								<div class="slide">
+									<div class="promo-card">
+										<div class="promo-card__title">
+											<a href="">Отчет по заказам для 1С:Комплексная автоматизация 8</a>
+										</div>
+										<div class="promo-card__subtitle">ООО «Московская Тепловая Компания»</div>
+										<div class="promo-card__desc">
+											<p>Внешний отчет «Отчет по заказам» для 1С:Комплексная автоматизация 8. Отчет выводит информацию по незакрытым (не оплачен/не отгружен полностью) заказам в разрезе контрагентов за период.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="slide">
+									<div class="promo-card">
+										<div class="promo-card__title">
+											<a href="">Разработка правил обмена между конфигурациями 1C</a>
+										</div>
+										<div class="promo-card__subtitle">ОАО «Сельэлектросетьстрой»</div>
+										<div class="promo-card__desc">
+											<ol>
+												<li>Разработка правил обмена между конфигурациями 1C: Управление торговлей 11 и 1С: Бухгалтерия предприятия 2.0.</li>
+												<li>Разработка внешнего отчета «Платежный календарь».</li>
+												<li>Доработка типового отчета «Анализ потребностей товара»</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">«1С:Управление Торговлей 8» (редакция 11)
+						<br>
+						— еще больше возможностей!</h2>
+				</div>
+				<div class="content-group__body">
+					<ul class="list-left-underline uk-child-width-1-3@m uk-margin-large-bottom" uk-grid>
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">
+								Сегодня большинство организаций используют программу «1С:Управление Торговлей 8» редакции 10.3, однако разработчики «1С» представили обновленную версию программы, которая имеет ряд отличий.
+							</div>
+						</li>
+
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">
+								Сегодня большинство организаций используют программу «1С:Управление Торговлей 8» редакции 10.3, однако разработчики «1С» представили обновленную версию программы, которая имеет ряд отличий.
+							</div>
+						</li>
+
+						<li class="list-left-underline__item-wrapper">
+							<div class="list-left-underline__item">
+								Усовершенствованы возможности CRM. Теперь в программе можно формировать воронки продаж, регламентацию управления процессом продажи, автоматизировать подготовку продажи и многое другое.
+							</div>
+						</li>
+					</ul>
+
+					<a href="" class="btn btn--full-width uk-margin-large-bottom">Показать все</a>
+
+					<div class="lead-text">
+						Самое главное нововведение «1С:Управление торговлей 8 (редакция 11)» –
+						<span class="fill-yellow">это возможность работать с тонким и веб-клиентом.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
+	<section class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 id="add-info" class="title-h2 uk-margin-medium-bottom">Как результат, покупка программы «1С:Управление Торговлей 8» приведет
+						<br>
+						к получению более высокой прибыли.</h2>
+				</div>
+				<div class="content-group__body">
+					<a href="" class="btn btn--yellow uk-margin-large-bottom">Заказать демонстрацию</a>
+
+					<ul class="tab-top" uk-switcher>
+						<li>
+							<a href="#">Интерфейс</a>
+						</li>
+						<li>
+							<a href="#">Видео</a>
+						</li>
+						<li>
+							<a href="#">Презентации</a>
+						</li>
+					</ul>
+					<ul class="uk-switcher">
+						<li>
+							<div class="three-divider-columns uk-child-width-1-3@m uk-grid" uk-grid>
+								<div class="three-divider-columns__col">
+									<div class="three-divider-columns__item">
+										<ul class="directory-list">
+											<li>
+												<a href="#" download>Справочник контрагента</a>
+											</li>
+											<li>
+												<a href="#" download>Карточка контрагента</a>
+											</li>
+											<li>
+												<a href="#" download>Банковские выписки</a>
+											</li>
+											<li>
+												<a href="#" download>Поступление на расчетный счет</a>
+											</li>
+											<li>
+												<a href="#" download>Создание счета-фактуры на аванс</a>
+											</li>
+											<li>
+												<a href="#" download>Создание счета на оплату</a>
+											</li>
+											<li>
+												<a href="#" download>Создание счета на оплату (этап 1)</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="three-divider-columns__col">
+									<div class="three-divider-columns__item">
+										<ul class="directory-list">
+											<li>
+												<a href="#" download>Создание счета на оплату (этап 2)</a>
+											</li>
+											<li>
+												<a href="#" download>Создание счета на оплату (этап 3)</a>
+											</li>
+											<li>
+												<a href="#" download>Реализация товаров и услуг</a>
+											</li>
+											<li>
+												<a href="#" download>Реализация товаров и услуг (продолжение)</a>
+											</li>
+											<li>
+												<a href="#" download>Расходная накладная</a>
+											</li>
+											<li>
+												<a href="#" download>Книга продаж</a>
+											</li>
+											<li>
+												<a href="#" download>Список документов по контрагенту</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="three-divider-columns__col">
+									<div class="three-divider-columns__item">
+										<ul class="directory-list">
+											<li>
+												<a href="#" download>Оборотно-сальдовая ведомость</a>
+											</li>
+											<li>
+												<a href="#" download>Подключение к 1С-отчетность</a>
+											</li>
+											<li>
+												<a href="#" download>1С-отчетность</a>
+											</li>
+											<li>
+												<a href="#" download>Путеводитель по демонстрационной базе</a>
+											</li>
+											<li>
+												<a href="#" download>Аналитика для руководителя</a>
+											</li>
+											<li>
+												<a href="#" download>Поддержка и обслуживание</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>Нет контента</li>
+						<li>Нет контента</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-group -->
+{% endblock %}
+
+{% block afterContent %}
+
+	<!-- begin promo-section -->
+	<section class="promo-section">
+		<div class="uk-container">
+			<h2 class="title-h2">Хотите стать профи в работе с программой «1С»? Записывайтесь на наши курсы!
+			</h2>
+
+			<a href="#callback-modal" class="btn btn--yellow" uk-toggle>Записаться на курсы</a>
+		</div>
+	</section>
+	<!-- end promo-section -->
+
+{% endblock %}

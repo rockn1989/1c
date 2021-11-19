@@ -1,0 +1,23 @@
+.news-slider {
+  .slider {
+    height: 262px;
+
+    @media (min-width: $tablet-w) {
+      height: 177px;
+    }
+  }
+
+  .slide {
+    margin: 0 10px;
+  }
+
+  .post {
+    padding-right: 20px;
+    width: 276px;
+
+    @media (min-width: 768px) {
+      border-right: 1px solid $gray;
+      width: calc(#{$containerWidth - $gutter * 2} / 2);
+    }
+  }
+}
