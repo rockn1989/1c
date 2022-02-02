@@ -131,6 +131,16 @@
 						<a href="" role="button">
 							{{mixins.icon('20px','20px','search') }}
 						</a>
+						<div class="dropdown-menu" uk-dropdown="pos: bottom-justify; mode:click; offset: -1; boundary: #header-boundry; boundary-align: true; delay-hide: 0;">
+							<div class="uk-container">
+								<div class="dropdown-menu__inner">
+									<form action="" class="default-form main-search-form">
+										<input type="text" placeholder="Введите поисковый запрос">
+										<button class="btn">Найти</button>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="toolbar__email">
 						<a href="" role="button">
@@ -139,7 +149,10 @@
 					</div>
 					<div class="toolbar__basket">
 						<a href="" role="button">
-							{{mixins.icon('20px','18px','cart') }}
+							<span class="basket__icon">
+								{{mixins.icon('20px','18px','cart') }}
+								<span class="basket__count">12</span>
+							</span>
 						</a>
 					</div>
 					<div class="toolbar__menu uk-hidden@l">

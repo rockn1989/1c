@@ -59,6 +59,15 @@
           color: $yellow;
         }
       }
+      .toolbar__basket:hover {
+        svg {
+          color: $yellow;
+        }
+        .basket__count {
+          background-color: $yellow;
+          color: $white;
+        }
+      }
     }
 
     .dropdown-menu {
@@ -110,6 +119,39 @@
           border-color: $yellow;
         }
       }
+    }
+
+    .main-search-form {
+      input[type="text"] {
+        padding-left: 0;
+        background-color: transparent;
+        color: $white;
+        border: none;
+        border-bottom: 1px solid $white;
+        &:hover,
+        &:focus {
+          border-bottom-color: $white;
+        }
+      }
+
+      .btn {
+        background-color: $yellow;
+        border: 1px solid $yellow;
+        &:hover {
+          background-color: transparent;
+          color: $white;
+          border-color: $yellow;
+        }
+      }
+
+      ::placeholder {
+        color: $white;
+      }
+    }
+
+    .toolbar__basket .basket__count {
+      background-color: $white;
+      color: $darkBlue;
     }
   }
 
@@ -265,6 +307,30 @@
   svg {
     color: $darkBlue;
     transition: color 0.3s ease;
+  }
+
+  &__basket {
+    .basket__icon {
+      position: relative;
+      display: block;
+    }
+    .basket__count {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      line-height: 13px;
+      background: $darkBlue;
+      color: #ffffff;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      transition: background-color 0.3s, color 0.3s ease;
+    }
   }
 }
 
