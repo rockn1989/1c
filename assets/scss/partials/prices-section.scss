@@ -92,7 +92,7 @@
           width: 100%;
 
           @media (min-width: $tablet-w) {
-            width: 40%;
+            width: 50%;
           }
         }
       }
@@ -101,6 +101,18 @@
 
   .buy-button {
     color: $darkBlue;
+  }
+
+  &--license {
+    tbody {
+      tr {
+        td:first-child {
+          @media (min-width: $tablet-w) {
+            width: 70%;
+          }
+        }
+      }
+    }
   }
 }
 

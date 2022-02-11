@@ -145,6 +145,112 @@
 	{% include "../includes/partials/products-slider.twig" with {'id': idSection} %}
 
 	<!-- begin content-group -->
+	<div class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Наши лицензии</h2>
+				</div>
+				<table class="price-table price-table--license">
+					<thead>
+						<tr>
+							<th class="mobile-title">Продукт</th>
+							<th>Наименование продукта</th>
+							<th>Стоимость</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								<a href="" class="bold-text">1С:Управление торговлей и взаимоотношениями с клиентами (CRM)</a>
+							</td>
+							<td>
+								<div class="price-product">
+									<div class="price-product__value">25 960 руб</div>
+									<div class="price-product__action">
+										<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+											{{ mixins.icon('36px', '36px', 'cart') }}
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="" class="bold-text">1С:CRM СТАНДАРТ. Комплект на 5 пользователей</a>
+							</td>
+
+							<td>
+								<div class="price-product">
+									<div class="price-product__value">26 000 руб.</div>
+									<div class="price-product__action">
+										<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+											{{ mixins.icon('36px', '36px', 'cart') }}
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="" class="bold-text">1С:CRM ПРОФ. Редакция 2.0</a>
+							</td>
+
+							<td>
+								<div class="price-product">
+									<div class="price-product__value">19 600 руб</div>
+									<div class="price-product__action">
+										<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+											{{ mixins.icon('36px', '36px', 'cart') }}
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="" class="bold-text">1С:Предприятие 8.CRM КОРП. Редакция 2.0</a>
+							</td>
+							<td>
+								<div class="price-product">
+									<div class="price-product__value">31 200 руб.</div>
+									<div class="price-product__action">
+										<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+											{{ mixins.icon('36px', '36px', 'cart') }}
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="" class="bold-text">1С:CRM. Базовая версия</a>
+							</td>
+
+							<td>
+								<div class="price-product">
+									<div class="price-product__value">5 000 руб.</div>
+									<div class="price-product__action">
+										<a href="#buy-modal" class="buy-button" role="button" uk-toggle>
+											{{ mixins.icon('36px', '36px', 'cart') }}
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- end content-group -->
+
+	<!-- begin content-group -->
 	<section class="content-group">
 		<div class="uk-container">
 			<div class="content-group__inner">
@@ -243,6 +349,20 @@
 	</section>
 	<!-- end content-group -->
 
+	<!-- begin content-group -->
+	<div class="content-group">
+		<div class="uk-container">
+			<div class="content-group__inner">
+				<div class="content-group__header">
+					<h2 class="title-h2">Возможности 1С:Управление по целям и KPI</h2>
+				</div>
+				<div class="content-group__body">
+					{% include "../includes/partials/targets-and-kpi.twig" %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end content-group -->
 
 	<!-- begin content-group -->
 	<section class="content-group bgGray uk-margin-remove-bottom">

@@ -51,4 +51,10 @@
       flex-shrink: 0;
     }
   }
+
+  &__desc-wrapper {
+    @media (min-width: $mob-s) {
+      padding-left: 20px;
+    }
+  }
 }
