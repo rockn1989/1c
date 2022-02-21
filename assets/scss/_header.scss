@@ -9,10 +9,10 @@
       }
     }
     .header-desk {
-      background-color: transparent;
+      background-color: $darkBlue;
       .header-desk__inner {
         &:after {
-          background-color: $white;
+          background-color: transparent;
         }
       }
     }
