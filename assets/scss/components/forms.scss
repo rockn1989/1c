@@ -13,7 +13,7 @@
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    padding: 17px 24px;
+    padding: 12px 24px;
     width: 100%;
     font-size: 20px;
     line-height: 28px;
@@ -33,12 +33,16 @@
     &.error {
       border-color: $error;
     }
+
+    @media (min-width: 1500px) {
+      padding: 17px 24px;
+    }
   }
 
   textarea {
     padding: 17px 24px;
     width: 100%;
-    min-height: 194px;
+    min-height: 120px;
     font-size: 20px;
     line-height: 28px;
     border: 1px solid $gray;
@@ -47,6 +51,10 @@
     &:focus,
     &:hover {
       border-color: $darkBlue;
+    }
+
+    @media (min-width: 1500px) {
+      min-height: 194px;
     }
   }
 

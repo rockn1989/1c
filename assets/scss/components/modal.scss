@@ -5,13 +5,14 @@
     padding: 48px 0;
     width: 100%;
 
-    @media (min-width: $tablet-w) {
+    @media (min-width: 1500px) {
       padding: 96px 0;
     }
   }
 
   .uk-modal-header {
     position: relative;
+    padding-top: 0;
     border: none;
     background-color: transparent;
   }
