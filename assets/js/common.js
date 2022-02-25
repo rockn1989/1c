@@ -84,6 +84,19 @@ $(function () {
   }
 
   /**
+   * Youtube
+   */
+
+  var $youtube = $(".youtube"),
+    source = "https://img.youtube.com/vi/" + $youtube.data("embed") + "/0.jpg",
+    image = new Image();
+
+  image.src = source;
+  image.addEventListener("load", function () {
+    $youtube.append(image);
+  });
+
+  /**
    * Svg4everybody
    */
 
