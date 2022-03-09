@@ -1,6 +1,6 @@
 .main-projects-slider {
   .slider {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
     height: 510px;
     overflow: hidden;
     &.slick-initialized {
@@ -14,8 +14,8 @@
     }
     .slick-prev,
     .slick-next {
-      width: 96px;
-      height: 96px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       border: 1px solid $yellow;
       background-repeat: no-repeat;
@@ -56,7 +56,7 @@
     }
     .slick-dots {
       position: absolute;
-      bottom: -60px;
+      bottom: -40px;
       text-align: center;
       li {
         margin: 0 20px 0 0;
@@ -123,7 +123,7 @@
 
 .projects-slider {
   .slider {
-    height: 580px;
+    height: 556px;
 
     @media (min-width: $tablet-w) {
       height: 650px;

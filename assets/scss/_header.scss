@@ -153,6 +153,12 @@
       background-color: $white;
       color: $darkBlue;
     }
+
+    .city-item__name {
+      a {
+        color: $white;
+      }
+    }
   }
 
   &-desk {
@@ -335,7 +341,7 @@
 }
 
 .dropdown-menu {
-  padding: 96px 0;
+  padding: 56px 0;
   color: $darkBlue;
   &__inner {
     .uk-grid {

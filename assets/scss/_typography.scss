@@ -29,7 +29,7 @@ h1,
   @include adpFont(48, 48, 64, 64, 320, 1400);
 
   @media (min-width: $tablet-w) {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
   }
 }
 
@@ -39,7 +39,8 @@ h2,
   @include adpFont(36, 44, 56, 56, 320, 1400);
 
   @media (min-width: $tablet-w) {
-    margin-bottom: 96px;
+    //margin-bottom: 56px;
+    margin-bottom: 56px;
   }
 }
 
@@ -94,14 +95,14 @@ a {
   color: $black;
 
   @media (min-width: $tablet-w) {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
   }
 }
 
 * + .lead-text {
   margin-top: 48px;
   @media (min-width: $tablet-w) {
-    margin-top: 80px;
+    margin-top: 56px;
   }
 }
 
@@ -246,7 +247,7 @@ a {
     margin: 48px 0;
 
     @media (min-width: $tablet-w) {
-      margin: 80px 0;
+      margin: 56px 0;
     }
   }
 
@@ -256,8 +257,8 @@ a {
       padding-bottom: 48px;
 
       @media (min-width: $tablet-w) {
-        margin-bottom: -96px !important;
-        padding-bottom: 96px;
+        margin-bottom: -56px !important;
+        padding-bottom: 56px;
       }
     }
   }
@@ -434,7 +435,7 @@ blockquote {
   }
 
   @media (min-width: $tablet-w) {
-    padding: 75px 80px 75px 60px;
+    padding: 75px 56px 75px 60px;
   }
 
   picture {

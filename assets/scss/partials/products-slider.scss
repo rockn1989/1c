@@ -1,6 +1,6 @@
 .products-slider {
   .slider {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
     height: 563px;
     overflow: hidden;
     &.slick-initialized {
@@ -36,7 +36,7 @@
         display: none;
       }
       @media (min-width: $tablet-w) {
-        top: -96px;
+        top: -56px;
       }
       &:hover {
         background-color: $yellow;

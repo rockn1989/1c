@@ -1,6 +1,6 @@
 .content-slider {
   .slider {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
     overflow: hidden;
     &.slick-initialized {
       height: auto;
@@ -27,7 +27,7 @@
         display: none;
       }
       @media (min-width: $tablet-w) {
-        top: -96px;
+        top: -56px;
       }
 
       &:hover {

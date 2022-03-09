@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 48px;
   @media (min-width: $tablet-w) {
-    margin-bottom: 96px;
+    margin-bottom: 56px;
   }
   &__bg {
     position: absolute;
@@ -39,7 +39,7 @@
     position: relative;
     margin-bottom: 0;
     z-index: 15;
-    height: 580px;
+    height: 556px;
     overflow: hidden;
 
     @media (min-width: $tablet-w) {
@@ -76,8 +76,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 96px;
-      height: 96px;
+      width: 56px;
+      height: 56px;
       border: 1.5px solid $white;
       border-radius: 50%;
       transform: translateY(-50%);

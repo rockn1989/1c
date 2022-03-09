@@ -1,7 +1,7 @@
 .content-group {
   padding-bottom: 48px;
   @media (min-width: $tablet-w) {
-    padding-bottom: 96px;
+    padding-bottom: 56px;
   }
 
   &.bgGray {
@@ -9,8 +9,8 @@
     margin-top: 48px;
     margin-bottom: 48px;
     @media (min-width: $tablet-w) {
-      margin-top: 96px;
-      margin-bottom: 96px;
+      margin-top: 56px;
+      margin-bottom: 56px;
     }
     &:after {
       content: "";
@@ -24,7 +24,7 @@
       z-index: -1;
 
       @media (min-width: $tablet-w) {
-        top: -96px;
+        top: -56px;
       }
     }
 

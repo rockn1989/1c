@@ -1,7 +1,7 @@
 .news-section {
   margin-bottom: 48px;
   @media (min-width: $tablet-w) {
-    margin-bottom: 96px;
+    margin-bottom: 56px;
   }
 }
 
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $tablet-w) {
-      padding: 96px 0;
+      padding: 56px 0;
     }
 
     .post {
@@ -36,7 +36,7 @@
     width: 100%;
     border-bottom: 1px solid $gray;
     @media (min-width: $tablet-w) {
-      padding: 0 0 96px;
+      padding: 0 0 56px;
     }
   }
 }
@@ -119,6 +119,6 @@
   padding-bottom: 48px;
 
   @media (min-width: $tablet-w) {
-    padding-bottom: 96px;
+    padding-bottom: 56px;
   }
 }

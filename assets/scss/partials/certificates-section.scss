@@ -14,14 +14,14 @@
     }
 
     @media (min-width: $tablet-w) {
-      margin-bottom: 80px !important;
+      margin-bottom: 56px !important;
       border-bottom: 1px solid $gray;
     }
   }
 
   &__item {
     @media (min-width: $tablet-w) {
-      padding-bottom: 80px;
+      padding-bottom: 56px;
     }
   }
 
