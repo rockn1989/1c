@@ -59,7 +59,7 @@ $(function () {
   $(".clients-slider .slider").slick({
     arrows: true,
     dots: false,
-    infinite: true,
+    infinite: false,
     fade: false,
     cssEase: "linear",
     autoplay: false,
