@@ -145,8 +145,8 @@
     &:nth-child(even) {
       .slide__top {
 
-        opacity: 0;
-        transform: translateY(-15px);
+        //opacity: 0;
+        //transform: translateY(-15px);
         visibility: hidden;
 
         @media (min-width: 768px) {
@@ -159,8 +159,8 @@
     &:nth-child(odd) {
       .slide__bottom {
 
-        opacity: 0;
-        transform: translateY(15px);
+        //opacity: 0;
+        //transform: translateY(15px);
         visibility: hidden;
 
         @media (min-width: 768px) {
