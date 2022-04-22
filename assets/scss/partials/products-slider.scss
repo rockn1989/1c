@@ -98,6 +98,10 @@
     &.one-line {
       .slide {
         margin: 0;
+
+        &>div {
+          height: 100%;
+        }
       }
 
       .slick-list {
