@@ -161,7 +161,8 @@
     padding: 95px 0;
 
     @media (min-width: $tablet-w) {
-      padding: 212px 0 158px 158px;
+      // padding: 212px 0 158px 158px;
+      padding: 100px 0 60px 158px;
     }
 
     &__content {
